@@ -1,0 +1,52 @@
+<article id="player-keyboard">
+  <h3>Player keyboard shortcuts</h3>
+  
+  <nav>
+    <h3>Site wide</h3>
+    
+    <ul>
+      <li>
+        <span>?</span> Bring up this help dialog
+      </li>
+    </ul>
+  </nav>
+  
+  <nav>
+    <h3>Editor</h3>
+    
+    <ul>
+      {% for i in (1..4) %}
+        <li>
+          <span>g</span> <span>{{ i }}</span>Go to {{ i }}
+        </li>
+      {% endfor %}
+        <li>
+          <span>k</span> Previous step
+        </li>
+        <li>
+          <span>j</span> Next step
+        </li>
+    </ul>
+  </nav>
+  
+  <nav>
+    <h3>Player</h3>
+    
+    <ul>
+      {% for i in (1..4) %}
+        <li>
+          <span>g</span> <span>{{ i }}</span>Go to {{ i }} mode
+        </li>
+      {% endfor %}
+        <li>
+          <span>ctrl p</span> Print
+        </li>
+        <li>
+          <span>k</span> Previous step
+        </li>
+        <li>
+          <span>j</span> Next step
+        </li>
+    </ul>
+  </nav>
+</article>
