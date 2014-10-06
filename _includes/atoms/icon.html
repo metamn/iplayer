@@ -1,0 +1,12 @@
+
+{% assign id = include.id | times: 1 %}
+{% assign icon = page.icons[id] %}
+
+<span class="image">
+  <img src="{{ site.url }}/{{ site.images }}/{{ icon.image }}" alt="{{ icon.title }}">
+</span>
+{% if icon.text != "none" %}
+  <span class="text">
+    {{ icon.title }}
+  </span>
+{% endif %}

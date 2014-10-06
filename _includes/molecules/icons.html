@@ -1,0 +1,9 @@
+{% assign ids = include.ids | split: ',' %}
+
+<ul>
+  {% for i in ids %}
+    <li>
+      {% include atoms/icon.html id=i %}
+    </li>
+  {% endfor %}
+</ul>
