@@ -13,12 +13,11 @@
     <h3>Links</h3>
     
     <ul>
-      <li>Home</li>
-      <li>Tour</li>
-      <li>Plans & Pricing</li>
-      <li>FAQ</li>
-      <li>Blog</li>
-      <li>Contact Us</li>
+      {% for i in (0..page.links.size) %}
+        <li>
+          {% include atoms/link.html id=i %}
+        </li>
+      {% endfor %}
     </ul>
   </nav>
   
