@@ -9,20 +9,19 @@ html {
       @include hide-title;
     }
     
-    header, section {
-      padding: $lem / 2;
-    }
-    
     header {
+      padding: $lem/2;
       @include header;
     }
     
     section {
       &#player {
+        padding: $lem/2;
         @include player;
       }
       
       &#menu {
+        padding: $lem/2;
         @include menu;
       }
     }
