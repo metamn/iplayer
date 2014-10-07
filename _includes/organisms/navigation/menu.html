@@ -1,0 +1,11 @@
+<nav>
+  <h3>Menu</h3>
+
+  <ul>
+    {% for i in (0..page.links.size) %}
+      <li>
+        {% include atoms/link.html id=i %}
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
