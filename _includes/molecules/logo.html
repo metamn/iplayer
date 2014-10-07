@@ -1,3 +1,7 @@
-<{{ include.h1 }}>
+{% comment %}
+- to have a proper HTML5 outline structure sometimes the logo must be wrapped into a h4
+{% endcomment %}
+
+<{{ include.h1 }} class="logo">
   <a href="{{ site.url }}/" title="{{ site.title }}">{{ site.title }}</a>
 </{{ include.h1 }}>
