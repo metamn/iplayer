@@ -9,8 +9,22 @@ html {
       @include hide-title;
     }
     
+    header, section {
+      padding: $lem / 2;
+    }
+    
     header {
       @include header;
+    }
+    
+    section {
+      &#player {
+        @include player;
+      }
+      
+      &#menu {
+        @include menu;
+      }
     }
   }
 }

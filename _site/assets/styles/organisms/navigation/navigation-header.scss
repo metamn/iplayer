@@ -1,0 +1,8 @@
+@mixin navigation-header {
+  @include flex-item($align-self: auto);
+  @include flexbox($wrap: nowrap);
+  
+  .icon {
+    @include icon(logo);
+  }
+}

@@ -2,10 +2,8 @@
 {% assign id = include.id | times: 1 %}
 {% assign icon = page.icons[id] %}
 
-<span class="{{ icon.glyph }}"></span>
-{% if icon.text != "none" %}
-  <span class="text">
-    {{ icon.title }}
-  </span>
-{% endif %}
+<div class="icon">
+  <span class="{{ icon.glyph }} {{ icon.class }}"></span>
+  <span class="text {{ icon.text }}">{{ icon.title }}</span>
+</div>
 

@@ -1,5 +1,11 @@
 @mixin header {
+  @include flexbox($wrap: nowrap, $justify-content: space-between);
+  
   .logo {
     @include logo;
+  }
+  
+  nav {
+    @include navigation-header;
   }
 }
