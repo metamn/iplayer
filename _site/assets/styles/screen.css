@@ -44,6 +44,10 @@ html body header nav { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; 
 html body header nav .icon { margin-left: 0.625em; cursor: pointer; }
 html body header nav .icon [class^="icon-"], html body header nav .icon [class*=" icon-"] { font-family: "Source Sans Pro", sans-serif; font-weight: 700; font-style: italic; font-family: 'icomoon'; }
 html body header nav .icon span.text.none { display: none; }
+html body section#player #player-body .step { display: none; }
+html body section#player #player-body #player-footer { display: none; }
+html body section#player #player-menu { display: none; }
+html body section#player #player-share { display: none; }
 html body section#menu { display: none; }
 
 html body { font-size: 125%; line-height: 1.25; color: #1a1a1a; background-color: #f9f9f9; font-family: "Source Sans Pro", sans-serif; font-weight: 400; }
@@ -58,4 +62,8 @@ html body header nav { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; 
 html body header nav .icon { margin-left: 0.625em; cursor: pointer; }
 html body header nav .icon [class^="icon-"], html body header nav .icon [class*=" icon-"] { font-family: "Source Sans Pro", sans-serif; font-weight: 700; font-style: italic; font-family: 'icomoon'; }
 html body header nav .icon span.text.none { display: none; }
+html body section#player #player-body .step { display: none; }
+html body section#player #player-body #player-footer { display: none; }
+html body section#player #player-menu { display: none; }
+html body section#player #player-share { display: none; }
 html body section#menu { display: none; }

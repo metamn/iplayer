@@ -1,18 +1,17 @@
 <article id="player-summary">
   <h3>Player summary</h3>
   
-  <time datetime="{{ page.date }}" pubdate>{{ page.edited }}</time>
-  
   <h1>{{ page.title }}</h1>
-  
-  <ul>
-    <li>{% include atoms/icon.html id="8" %} {{ page.views }} views</li>
-    <li>{{ page.slides }} steps</li>
-  </ul>
   
   <aside>
     <h3>Author</h3>
     
     {% include atoms/figure.html mobile=page.avatar title=page.author %}  
   </aside>
+  
+  <ul>
+    <li>{{ page.views }} views</li>
+    <li>{{ page.slides }} steps</li>
+    <li><time datetime="{{ page.date }}" pubdate>{{ page.edited }}</time></li>
+  </ul>
 </article>

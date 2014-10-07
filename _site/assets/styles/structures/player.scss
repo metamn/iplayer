@@ -1,3 +1,13 @@
 @mixin player {
-
-}
+  #player-body {
+    @include player-body;  
+  }
+  
+  #player-menu {
+    @include navigation-player;
+  }
+  
+  #player-share {
+    @include player-share;
+  }
+}   
