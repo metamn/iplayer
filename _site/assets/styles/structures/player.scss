@@ -1,4 +1,6 @@
 @mixin player {
+  @include flexbox($wrap: wrap);
+  
   #player-body {
     @include player-body;  
   }
