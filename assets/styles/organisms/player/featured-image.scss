@@ -1,5 +1,6 @@
 @mixin featured-image {
   figure {
     @include figure;
+    max-width: calc(1024px - #{$lem*2});
   }
 }
