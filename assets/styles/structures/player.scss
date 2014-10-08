@@ -1,17 +1,5 @@
 @mixin player {
-  @include below-laptop {
-    @include flexbox($wrap: wrap);
-  }
-  
   #intro {
     @include intro;  
-  }
-  
-  #author {
-    @include author(player);
-  }
-  
-  #navigation-player {
-    @include navigation-player;
   }
 }   
