@@ -1,5 +1,5 @@
 @mixin player {
-  @include flexbox($wrap: wrap);
+  @include flexbox($wrap: nowrap);
   
   #player-body {
     @include player-body;  
@@ -7,9 +7,5 @@
   
   #player-menu {
     @include navigation-player;
-  }
-  
-  #player-share {
-    @include player-share;
   }
 }   

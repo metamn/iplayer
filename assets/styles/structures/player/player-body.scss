@@ -2,12 +2,4 @@
   #player-summary {
     @include player-summary;
   }
-  
-  .step {
-    @include player-step;
-  }
-  
-  #player-footer {
-    @include player-footer;
-  }
 }   

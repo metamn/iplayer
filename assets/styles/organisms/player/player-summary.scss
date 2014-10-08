@@ -2,4 +2,8 @@
   .title {
     @include text(title);
   }
+  
+  figure {
+    @include figure;
+  }
 }
