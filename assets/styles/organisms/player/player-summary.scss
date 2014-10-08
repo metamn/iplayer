@@ -1,9 +1,0 @@
-@mixin player-summary {
-  .title {
-    @include text(title);
-  }
-  
-  figure {
-    @include figure;
-  }
-}

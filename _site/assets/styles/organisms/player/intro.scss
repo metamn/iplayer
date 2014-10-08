@@ -1,0 +1,23 @@
+@mixin intro {
+  
+  @include laptop-and-up {
+    @include flexbox($wrap: wrap);
+  } 
+  
+  aside {
+    @include show-title;
+    
+    h3 {
+      @include text(title);
+    }
+    
+    #author {
+      @include author(intro);
+    }
+  }
+  
+  figure {
+    @include figure;
+  }
+
+} 

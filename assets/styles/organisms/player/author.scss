@@ -1,0 +1,18 @@
+@mixin author($context: null) {
+  
+  // Hide on large screens
+  @if ($context == player) {
+    @include laptop-and-up {
+      display: none;
+    }
+  }
+  
+  // Hide on small screens
+  @if ($context == intro) {
+    display: none;
+    
+    @include laptop-and-up {
+      display: block;
+    }
+  }
+} 

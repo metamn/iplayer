@@ -43,10 +43,16 @@ html body header nav { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; 
 html body header nav .icon { margin-left: 0.625em; cursor: pointer; }
 html body header nav .icon [class^="icon-"], html body header nav .icon [class*=" icon-"] { font-family: "Source Sans Pro", sans-serif; font-weight: 700; font-style: italic; font-family: 'icomoon'; }
 html body header nav .icon span.text.none { display: none; }
-html body section#player { padding: 0.625em; display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
-html body section#player #player-body #player-summary .title { font-family: "Source Sans Pro", sans-serif; font-weight: 300; font-size: 1.6154em; }
-html body section#player #player-body #player-summary figure img { max-width: 100%; height: auto; }
-html body section#player #player-body #player-summary figure figcaption { display: none; }
+html body section#player { padding: 0.625em; }
+@media only screen and (max-width: 63.999em) { html body section#player { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; } }
+@media only screen and (min-width: 64em) { html body section#player #intro { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; } }
+html body section#player #intro aside > h3 { display: block; }
+html body section#player #intro aside h3 { font-family: "Source Sans Pro", sans-serif; font-weight: 300; font-size: 1.6154em; }
+html body section#player #intro aside #author { display: none; }
+@media only screen and (min-width: 64em) { html body section#player #intro aside #author { display: block; } }
+html body section#player #intro figure img { max-width: 100%; height: auto; }
+html body section#player #intro figure figcaption { display: none; }
+@media only screen and (min-width: 64em) { html body section#player #author { display: none; } }
 html body section#menu { padding: 0.625em; display: none; }
 
 html body { font-size: 125%; line-height: 1.25; color: #1a1a1a; background-color: #f9f9f9; font-family: "Source Sans Pro", sans-serif; font-weight: 400; }
@@ -60,8 +66,14 @@ html body header nav { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; 
 html body header nav .icon { margin-left: 0.625em; cursor: pointer; }
 html body header nav .icon [class^="icon-"], html body header nav .icon [class*=" icon-"] { font-family: "Source Sans Pro", sans-serif; font-weight: 700; font-style: italic; font-family: 'icomoon'; }
 html body header nav .icon span.text.none { display: none; }
-html body section#player { padding: 0.625em; display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
-html body section#player #player-body #player-summary .title { font-family: "Source Sans Pro", sans-serif; font-weight: 300; font-size: 1.6154em; }
-html body section#player #player-body #player-summary figure img { max-width: 100%; height: auto; }
-html body section#player #player-body #player-summary figure figcaption { display: none; }
+html body section#player { padding: 0.625em; }
+@media only screen and (max-width: 63.999em) { html body section#player { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; } }
+@media only screen and (min-width: 64em) { html body section#player #intro { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; } }
+html body section#player #intro aside > h3 { display: block; }
+html body section#player #intro aside h3 { font-family: "Source Sans Pro", sans-serif; font-weight: 300; font-size: 1.6154em; }
+html body section#player #intro aside #author { display: none; }
+@media only screen and (min-width: 64em) { html body section#player #intro aside #author { display: block; } }
+html body section#player #intro figure img { max-width: 100%; height: auto; }
+html body section#player #intro figure figcaption { display: none; }
+@media only screen and (min-width: 64em) { html body section#player #author { display: none; } }
 html body section#menu { padding: 0.625em; display: none; }

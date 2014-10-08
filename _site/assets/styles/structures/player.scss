@@ -1,11 +1,17 @@
 @mixin player {
-  @include flexbox($wrap: nowrap);
-  
-  #player-body {
-    @include player-body;  
+  @include below-laptop {
+    @include flexbox($wrap: wrap);
   }
   
-  #player-menu {
+  #intro {
+    @include intro;  
+  }
+  
+  #author {
+    @include author(player);
+  }
+  
+  #navigation-player {
     @include navigation-player;
   }
 }   
