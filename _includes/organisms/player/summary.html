@@ -8,12 +8,11 @@
   <aside>
     <h3>Author</h3>
     
-    {% include atoms/figure.html id="0" title=page.author %}  
+    {% include atoms/figure.html id="0" title=page.author %} 
+    <ul>
+      <li>{{ page.views }} views</li>
+      <li>{{ page.slides }} steps</li>
+      <li><time datetime="{{ page.date }}" pubdate>{{ page.edited }}</time></li>
+    </ul>
   </aside>
-  
-  <ul>
-    <li>{{ page.views }} views</li>
-    <li>{{ page.slides }} steps</li>
-    <li><time datetime="{{ page.date }}" pubdate>{{ page.edited }}</time></li>
-  </ul>
 </article>
