@@ -1,6 +1,9 @@
 @mixin featured-image {
+  @include laptop-and-up {
+    @include flex-basis(61.8%);
+  }
+  
   figure {
     @include figure;
-    max-width: calc(1024px - #{$lem*2});
   }
 }

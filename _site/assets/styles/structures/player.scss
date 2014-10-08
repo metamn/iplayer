@@ -1,4 +1,6 @@
 @mixin player {
+  padding: $lem / 2 $lem;
+  
   #intro {
     @include intro;  
   }

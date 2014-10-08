@@ -10,18 +10,19 @@ html {
     }
     
     header {
-      padding: $lem/2;
       @include header;
     }
     
     section {
       &#player {
-        padding: $lem/2;
         @include player;
       }
       
+      &#signup {
+        @include signup;
+      }
+      
       &#menu {
-        padding: $lem/2;
         @include menu;
       }
     }
