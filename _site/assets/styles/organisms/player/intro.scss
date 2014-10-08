@@ -1,9 +1,4 @@
 @mixin intro {
-  
-  @include laptop-and-up {
-    @include flexbox($wrap: wrap);
-  } 
-  
   aside {
     @include show-title;
     
@@ -20,4 +15,16 @@
     @include figure;
   }
 
+  
+  @include laptop-and-up {
+    @include flexbox($wrap: wrap, $justify-content: center);
+    
+    aside {
+      @include flex-basis(38%);
+    }
+    
+    figure {
+      @include flex-basis(62%)
+    }
+  } 
 } 

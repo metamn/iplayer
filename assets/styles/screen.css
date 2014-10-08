@@ -45,13 +45,15 @@ html body header nav .icon [class^="icon-"], html body header nav .icon [class*=
 html body header nav .icon span.text.none { display: none; }
 html body section#player { padding: 0.625em; }
 @media only screen and (max-width: 63.999em) { html body section#player { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; } }
-@media only screen and (min-width: 64em) { html body section#player #intro { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; } }
 html body section#player #intro aside > h3 { display: block; }
 html body section#player #intro aside h3 { font-family: "Source Sans Pro", sans-serif; font-weight: 300; font-size: 1.6154em; }
 html body section#player #intro aside #author { display: none; }
 @media only screen and (min-width: 64em) { html body section#player #intro aside #author { display: block; } }
 html body section#player #intro figure img { max-width: 100%; height: auto; }
 html body section#player #intro figure figcaption { display: none; }
+@media only screen and (min-width: 64em) { html body section#player #intro { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; }
+  html body section#player #intro aside { -webkit-flex-basis: 38%; -moz-flex-basis: 38%; -ms-flex-preferred-size: 38%; flex-basis: 38%; }
+  html body section#player #intro figure { -webkit-flex-basis: 62%; -moz-flex-basis: 62%; -ms-flex-preferred-size: 62%; flex-basis: 62%; } }
 @media only screen and (min-width: 64em) { html body section#player #author { display: none; } }
 html body section#menu { padding: 0.625em; display: none; }
 
@@ -68,12 +70,14 @@ html body header nav .icon [class^="icon-"], html body header nav .icon [class*=
 html body header nav .icon span.text.none { display: none; }
 html body section#player { padding: 0.625em; }
 @media only screen and (max-width: 63.999em) { html body section#player { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; } }
-@media only screen and (min-width: 64em) { html body section#player #intro { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; } }
 html body section#player #intro aside > h3 { display: block; }
 html body section#player #intro aside h3 { font-family: "Source Sans Pro", sans-serif; font-weight: 300; font-size: 1.6154em; }
 html body section#player #intro aside #author { display: none; }
 @media only screen and (min-width: 64em) { html body section#player #intro aside #author { display: block; } }
 html body section#player #intro figure img { max-width: 100%; height: auto; }
 html body section#player #intro figure figcaption { display: none; }
+@media only screen and (min-width: 64em) { html body section#player #intro { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; }
+  html body section#player #intro aside { -webkit-flex-basis: 38%; -moz-flex-basis: 38%; -ms-flex-preferred-size: 38%; flex-basis: 38%; }
+  html body section#player #intro figure { -webkit-flex-basis: 62%; -moz-flex-basis: 62%; -ms-flex-preferred-size: 62%; flex-basis: 62%; } }
 @media only screen and (min-width: 64em) { html body section#player #author { display: none; } }
 html body section#menu { padding: 0.625em; display: none; }
