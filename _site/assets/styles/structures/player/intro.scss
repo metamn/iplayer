@@ -1,7 +1,0 @@
-@mixin intro {
-  @include flexbox($wrap: wrap);
-  
-  #featured-image {
-    @include featured-image;
-  }
-} 

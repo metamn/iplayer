@@ -1,0 +1,13 @@
+@mixin author-and-strapline {
+  @include flexbox($wrap: nowrap, $justify-content: center);
+  
+  padding: $lem/2 $lem;
+  
+  #author {
+    @include author;
+  }
+  
+  #starpline {
+    @include strapline;
+  }
+}

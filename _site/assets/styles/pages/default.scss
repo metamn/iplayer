@@ -14,12 +14,12 @@ html {
     }
     
     section {
-      &#player {
-        @include player;
+      &#featured-image {
+        @include featured-image;
       }
       
-      &#signup {
-        @include signup;
+      &#author-and-strapline {
+        @include author-and-strapline;
       }
       
       &#menu {

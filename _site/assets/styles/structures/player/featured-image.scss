@@ -1,4 +1,9 @@
 @mixin featured-image {
+  @include flexbox($wrap: wrap);
+  
+  @include colors(white-on-blue);
+  padding: $lem / 2 $lem;
+  
   .title {
     @include text(title);
     padding: $lem/2 0 0;
@@ -19,4 +24,4 @@
   @include laptop-and-up {
     @include flexbox($wrap: nowrap, $align-items: center);
   }
-}
+} 
