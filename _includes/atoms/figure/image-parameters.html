@@ -25,5 +25,9 @@ Setting up title, class, figcaption, url
 {% endif %}
 
 {% if figcaption == null %}
-  {% assign figcaption = title %}
+  {% if include.figcaption %}
+    {% assign figcaption = include.figcaption %}
+    {% else %}
+      {% assign figcaption = title %}
+    {% endif %}
 {% endif %}

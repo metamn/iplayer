@@ -67,6 +67,14 @@
     <span class="na">font-weight</span><span class="o">:</span> <span class="mi">700</span><span class="p">;</span>
      
   <span class="p">}</span>
+  <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">navigation</span><span class="p">)</span> <span class="p">{</span>
+    <span class="na">font-family</span><span class="o">:</span> <span class="s2">&quot;Source Sans Pro&quot;</span><span class="o">,</span> <span class="no">sans-serif</span><span class="p">;</span>
+    <span class="na">font-weight</span><span class="o">:</span> <span class="mi">400</span><span class="p">;</span>
+    <span class="na">font-size</span><span class="o">:</span> <span class="no">smaller</span><span class="p">;</span>
+    <span class="na">text-transform</span><span class="o">:</span> <span class="no">uppercase</span><span class="p">;</span>
+    <span class="na">letter-spacing</span><span class="o">:</span> <span class="nv">$lem</span><span class="o">/</span><span class="mi">8</span><span class="p">;</span>
+     
+  <span class="p">}</span>
   <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">title</span><span class="p">)</span> <span class="p">{</span>
     <span class="na">font-family</span><span class="o">:</span> <span class="s2">&quot;Abel&quot;</span><span class="o">,</span> <span class="no">sans-serif</span><span class="p">;</span>
     <span class="na">font-weight</span><span class="o">:</span> <span class="mi">400</span><span class="p">;</span>
@@ -81,7 +89,7 @@
 
 
 <span class="c1">// </span>
-<span class="nv">$font-mixins</span><span class="o">:</span> <span class="n">body</span><span class="o">,</span> <span class="n">logo</span><span class="o">,</span> <span class="n">title</span><span class="p">;</span></code></pre></div></li>
+<span class="nv">$font-mixins</span><span class="o">:</span> <span class="n">body</span><span class="o">,</span> <span class="n">logo</span><span class="o">,</span> <span class="n">navigation</span><span class="o">,</span> <span class="n">title</span><span class="p">;</span></code></pre></div></li>
       <li></li>
       <li></li>
     </ul>

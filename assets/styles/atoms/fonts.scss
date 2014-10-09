@@ -14,6 +14,14 @@
     font-weight: 700;
      
   }
+  @if ($type == navigation) {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: smaller;
+    text-transform: uppercase;
+    letter-spacing: $lem/8;
+     
+  }
   @if ($type == title) {
     font-family: "Abel", sans-serif;
     font-weight: 400;
@@ -28,4 +36,4 @@ $font-families: Source Sans Pro, Abel;
 
 
 // 
-$font-mixins: body, logo, title;
+$font-mixins: body, logo, navigation, title; 

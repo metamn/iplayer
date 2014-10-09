@@ -10,7 +10,8 @@
   }
   
   figure {
-    @include figure;
+    @include figure($figcaption: true);
+    @include figcaption-play;
     padding: $lem 0;
   }
   

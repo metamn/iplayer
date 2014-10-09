@@ -1,0 +1,13 @@
+@mixin figcaption-play {
+  position: relative;
+  
+  figcaption {
+    @include center(both, $top: 45%);
+    position: absolute;
+    z-index: 1;
+    
+    @include font(navigation);
+    @include colors(white-on-blue);
+    padding: $lem/2;
+  }
+} 
