@@ -1,0 +1,11 @@
+@mixin button($padding: $lem/2 $lem, $border: $black) {
+  padding: $padding;
+  border: 2px solid $border;
+  @include border-radius($lem);
+  
+  display: inline-block;
+  cursor: pointer;
+  
+  @include link(none);
+  @include font(navigation);
+}

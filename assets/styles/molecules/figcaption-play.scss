@@ -6,8 +6,7 @@
     position: absolute;
     z-index: 1;
     
-    @include font(navigation);
+    @include button($border: $blue);
     @include colors(white-on-blue);
-    padding: $lem/2;
   }
 } 
