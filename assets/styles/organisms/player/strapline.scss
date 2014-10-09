@@ -1,19 +1,6 @@
 @mixin strapline {
-  @include flexbox($wrap: nowrap, $justify-content: center, $align-items: center);
-  padding: $lem/2 $lem;
-  
-  nav {
-    margin-right: $lem/2;
-  }
-  
-  span {
-    font-weight: 700;
-    @include font(title);
-  }
-  
   .title {
-    h3 {
-      
-    }
+    font-size: $heading-level-2;
+    font-style: italic;
   }
 }

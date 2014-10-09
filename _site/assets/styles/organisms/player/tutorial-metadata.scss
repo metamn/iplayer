@@ -1,0 +1,20 @@
+@mixin tutorial-metadata {
+  ul {
+    li {
+      span {
+        @include font(title);
+      }
+    }
+  }
+  
+  padding: $lem;
+  margin: auto $lem;
+  
+  @include desktop-and-up {
+    padding: $lem $lem * 4;
+    margin: auto $lem * 4;
+  }
+  
+  border-right: 1px solid;
+  border-left: 1px solid;
+}

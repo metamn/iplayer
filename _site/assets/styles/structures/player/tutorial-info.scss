@@ -1,0 +1,17 @@
+@mixin tutorial-info {
+  @include flexbox($wrap: nowrap, $justify-content: center, $align-items: center);
+  padding: $lem/2 $lem;
+  
+  #author {
+    @include author;
+  }
+  
+  #tutorial-metadata {
+    @include tutorial-metadata;
+  }
+  
+  #strapline {
+    @include strapline;
+  }
+  
+}
