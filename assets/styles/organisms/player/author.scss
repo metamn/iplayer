@@ -1,3 +1,19 @@
 @mixin author {
-
+  @include flexbox($wrap: nowrap, $justify-content: center, $align-items: center);
+  padding: $lem/2 $lem;
+  
+  figure {
+    @include figure;
+    margin-right: $lem;
+  }
+  
+  nav {
+    .name {
+      @include font(author);
+    }
+    
+    .role {
+      @include font(role);
+    }
+  }
 }

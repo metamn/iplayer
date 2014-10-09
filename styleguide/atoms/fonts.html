@@ -13,7 +13,7 @@ fonts:
     description: An universal typeface
     from: Google
     value: Source+Sans+Pro
-    styles: "300,400,700italic"
+    styles: "300,300italic,400,700italic"
     mixins:
       - name: Body
         font-family: sans-serif
@@ -34,6 +34,28 @@ fonts:
             value: smaller
           - name: text-transform
             value: uppercase
+          - name: letter-spacing
+            value: $lem/12
+      - name: Author
+        font-family: sans-serif
+        properties:
+          - name: font-weight
+            value: 300
+          - name: font-size
+            value: smaller
+          - name: text-transform
+            value: uppercase
+          - name: letter-spacing
+            value: $lem/12
+      - name: Role
+        font-family: sans-serif
+        properties:
+          - name: font-weight
+            value: 300
+          - name: font-size
+            value: smaller
+          - name: font-style
+            value: italic
           - name: letter-spacing
             value: $lem/12
   - name: Abel
