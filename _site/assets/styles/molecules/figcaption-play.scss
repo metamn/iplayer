@@ -6,7 +6,7 @@
     position: absolute;
     z-index: 1;
     
-    @include button($border: $blue);
-    @include colors(white-on-blue);
+    @include button($border: $green);
+    @include colors(white-on-green);
   }
 } 

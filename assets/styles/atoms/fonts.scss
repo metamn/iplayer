@@ -19,7 +19,7 @@
     font-weight: 400;
     font-size: smaller;
     text-transform: uppercase;
-    letter-spacing: $lem/8;
+    letter-spacing: $lem/12;
      
   }
   @if ($type == title) {
@@ -36,4 +36,4 @@ $font-families: Source Sans Pro, Abel;
 
 
 // 
-$font-mixins: body, logo, navigation, title; 
+$font-mixins: body, logo, navigation, title;

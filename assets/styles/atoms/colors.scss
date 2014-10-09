@@ -4,6 +4,7 @@ $white: hsla(0, 0, 97.5%, 1);
 $black: hsla(0, 0%, 10%, 1);
 $blue: hsla(219, 46%, 23%, 1);
 $lightblue: hsla(219, 57%, 40%, 1);
+$green: hsla(158, 100%, 36%, 1);
 
 
 // All color pairs
@@ -20,13 +21,16 @@ $lightblue: hsla(219, 57%, 40%, 1);
   } @if ($scheme == white-on-blue) {
       color: $white;
       background-color: $blue;
+  } @if ($scheme == white-on-green) {
+      color: $white;
+      background-color: $green;
   }
 }
 
 
 // All color codes collected in a list
-$colors: hsla(0, 0, 97.5%, 1), hsla(0, 0%, 10%, 1), hsla(219, 46%, 23%, 1), hsla(219, 57%, 40%, 1);
+$colors: hsla(0, 0, 97.5%, 1), hsla(0, 0%, 10%, 1), hsla(219, 46%, 23%, 1), hsla(219, 57%, 40%, 1), hsla(158, 100%, 36%, 1);
 
 
 // All color pairs collected in a list
-$color-pairs: black-on-white, white-on-black, blue-on-white, white-on-blue;
+$color-pairs: black-on-white, white-on-black, blue-on-white, white-on-blue, white-on-green; 
