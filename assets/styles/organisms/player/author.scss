@@ -4,6 +4,10 @@
   figure {
     @include figure;
     margin-right: $lem / 2;
+    
+    @include mobile {
+      display: none;
+    }
   }
   
   nav {
