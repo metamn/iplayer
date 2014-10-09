@@ -1,4 +1,5 @@
 @mixin player {
+  @include colors(white-on-blue);
   padding: $lem / 2 $lem;
   
   #intro {

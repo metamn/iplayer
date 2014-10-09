@@ -1,3 +1,4 @@
 @mixin text-title {
   @include font(title);
+  max-width: $text-width;
 }

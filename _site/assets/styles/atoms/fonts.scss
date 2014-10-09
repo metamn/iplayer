@@ -1,5 +1,5 @@
 
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700italic|);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700italic|Titillium+Web:300,400|);
 
 
 // A list of all font mixins
@@ -12,21 +12,20 @@
   @if ($type == logo) {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 700;
-    font-style: italic;
      
   }
   @if ($type == title) {
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 300;
-    font-size: $heading-level-2;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-size: $heading-level-1;
      
   }
 }
 
 
 // Special font mixins
-$font-families: Source Sans Pro;
+$font-families: Source Sans Pro, Titillium Web;
 
 
 // 
-$font-mixins: body, logo, title; 
+$font-mixins: body, logo, title;

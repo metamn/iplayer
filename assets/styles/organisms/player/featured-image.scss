@@ -1,9 +1,15 @@
 @mixin featured-image {
-  @include laptop-and-up {
-    @include flex-basis(61.8%);
+  .title {
+    @include text(title);
+    padding: $lem 0 0;
   }
   
   figure {
     @include figure;
+    padding: $lem 0;
+  }
+  
+  @include laptop-and-up {
+    @include flexbox($wrap: nowrap, $align-items: center);
   }
 }
