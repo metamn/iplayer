@@ -1,5 +1,5 @@
 @mixin author-and-strapline {
-  @include flexbox($wrap: nowrap, $justify-content: center);
+  @include flexbox($wrap: wrap, $justify-content: center, $align-items: center);
   padding: $lem/2 $lem;
   
   #author {
