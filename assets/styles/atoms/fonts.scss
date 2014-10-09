@@ -1,5 +1,5 @@
 
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700italic|Titillium+Web:300,400|);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700italic|Abel:400|);
 
 
 // A list of all font mixins
@@ -15,16 +15,16 @@
      
   }
   @if ($type == title) {
-    font-family: "Titillium Web", sans-serif;
+    font-family: "Abel", sans-serif;
     font-weight: 400;
-    font-size: $heading-level-1;
+    font-size: $heading-level-2;
      
   }
 }
 
 
 // Special font mixins
-$font-families: Source Sans Pro, Titillium Web;
+$font-families: Source Sans Pro, Abel;
 
 
 // 
