@@ -2,12 +2,18 @@
   .title {
     @include text(title);
     padding: $lem/2 0 0;
+    
+    nav {
+      @include slider-bullets;
+      padding: $lem/2 0 0;
+    }
   }
   
   figure {
     @include figure;
     padding: $lem 0;
   }
+  
   
   @include laptop-and-up {
     @include flexbox($wrap: nowrap, $align-items: center);

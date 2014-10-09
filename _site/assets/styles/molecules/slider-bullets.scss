@@ -1,0 +1,12 @@
+@mixin slider-bullets {
+  ul {
+    li {
+      display: inline-block;
+      cursor: pointer;
+      
+      &.active, &:hover {
+        color: $lightblue;
+      }
+    }
+  }
+}
