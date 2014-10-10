@@ -1,13 +1,11 @@
 @mixin title-and-author {
+  @include flexbox($wrap: nowrap);
+  
   #title {
     @include title;
   }
   
   #author {
     @include author;
-  }
-  
-  #meta {
-    @include meta;
   }
 }

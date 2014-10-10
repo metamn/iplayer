@@ -1,5 +1,5 @@
 @mixin intro {
-  @include flexbox($wrap: wrap);
+  @include flexbox($direction: column, $align-items: center);
   
   @include colors(white-on-blue);
   padding: $lem / 2 $lem;
@@ -10,10 +10,5 @@
   
   figure {
     @include featured-image;
-  }
-  
-  
-  @include laptop-and-up {
-    @include flexbox($wrap: nowrap, $align-items: center);
   }
 } 

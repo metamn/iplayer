@@ -1,5 +1,5 @@
 @mixin author {
-  @include flexbox($wrap: nowrap, $justify-content: center, $align-items: center);
+  @include flexbox($display: inline-flex, $wrap: nowrap, $align-items: center);
   
   figure {
     @include figure;
