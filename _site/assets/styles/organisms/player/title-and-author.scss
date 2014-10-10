@@ -1,0 +1,13 @@
+@mixin title-and-author {
+  #title {
+    @include title;
+  }
+  
+  #author {
+    @include author;
+  }
+  
+  #meta {
+    @include meta;
+  }
+}

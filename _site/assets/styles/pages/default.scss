@@ -14,12 +14,12 @@ html {
     }
     
     section {
-      &#featured-image {
-        @include featured-image;
+      &#intro {
+        @include intro;
       }
       
-      &#tutorial-info {
-        @include tutorial-info;
+      &#info {
+        @include info;
       }
     }
   }

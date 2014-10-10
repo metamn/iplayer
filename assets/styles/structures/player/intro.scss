@@ -1,0 +1,19 @@
+@mixin intro {
+  @include flexbox($wrap: wrap);
+  
+  @include colors(white-on-blue);
+  padding: $lem / 2 $lem;
+  
+  #title-and-author {
+    @include title-and-author;
+  }
+  
+  figure {
+    @include featured-image;
+  }
+  
+  
+  @include laptop-and-up {
+    @include flexbox($wrap: nowrap, $align-items: center);
+  }
+} 

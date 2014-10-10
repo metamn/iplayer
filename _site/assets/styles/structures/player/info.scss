@@ -1,4 +1,4 @@
-@mixin tutorial-info {
+@mixin info {
   @include flexbox($wrap: nowrap, $justify-content: center, $align-items: center);
   padding: $lem/2 $lem;
   
@@ -6,12 +6,7 @@
     @include author;
   }
   
-  #tutorial-metadata {
-    @include tutorial-metadata;
+  #meta {
+    @include meta;
   }
-  
-  #strapline {
-    @include strapline;
-  }
-  
 }

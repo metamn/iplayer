@@ -4,12 +4,12 @@
   {% assign author = page.author[0] %}
   {% include atoms/figure.html id="0" title=author.name %} 
   
-  <nav>
+  <aside>
     <h3>Author metadata</h3>
+    
     <ul>
-      <li>Made by</li>
       <li class="name">{{ author.name }}</li>
       <li class="role">{{ author.role }}</li>
     </ul>
-  </nav>
+  </aside>
 </article>

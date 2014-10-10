@@ -1,0 +1,5 @@
+@mixin featured-image {
+  @include figure($figcaption: true);
+  @include figcaption-play;
+  padding: $lem 0;
+}

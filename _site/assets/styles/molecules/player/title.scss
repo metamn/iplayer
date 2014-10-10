@@ -1,0 +1,9 @@
+@mixin title {
+  @include text(title);
+  padding: $lem/2 0 0;
+
+  nav {
+    @include slider-bullets;
+    padding: $lem/2 0 0;
+  }
+}
