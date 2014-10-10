@@ -5,7 +5,7 @@
   
   @if $value == flex-start {
     -ms-flex-item-align: start;
-  } @else if $value == flex-end {
+  } @elseif $value == flex-end {
     -ms-flex-item-align: end;
   } @else {
     -ms-flex-item-align: $value;

@@ -2,7 +2,7 @@
   @include flexbox($direction: column, $align-items: center);
   
   @include colors(white-on-blue);
-  padding: $lem / 2 $lem;
+  padding: $lem;
   
   #title-and-author {
     @include title-and-author;
