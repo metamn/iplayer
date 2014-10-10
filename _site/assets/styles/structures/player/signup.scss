@@ -1,0 +1,9 @@
+@mixin signup {
+  @include flexbox($wrap: nowrap, $justify-content: space-around, $align-items: center);
+  padding: $lem/2 $lem;
+  
+  .button {
+    margin-left: $lem;
+    @include button;
+  }
+}
