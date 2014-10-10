@@ -1,5 +1,4 @@
 @mixin author {
-  @include flex-align-self(flex-end);
   @include flexbox($display: inline-flex, $wrap: nowrap, $align-items: center);
   
   @include mobile {
@@ -12,12 +11,18 @@
   }
   
   aside {
-    .name {
-      @include font(author);
-    }
-    
-    .role {
-      @include font(role);
+    li {
+      &.by {
+        font-size: small;
+      }
+      
+      &.name {
+        @include font(author);
+      }
+
+      &.role {
+        @include font(role);
+      }
     }
   }
   

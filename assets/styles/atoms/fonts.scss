@@ -24,7 +24,6 @@
   }
   @if ($type == author) {
     font-family: "Source Sans Pro", sans-serif;
-    font-weight: 300;
     font-size: smaller;
     text-transform: uppercase;
     letter-spacing: $lem/12;
@@ -52,4 +51,4 @@ $font-families: Source Sans Pro, Abel;
 
 
 // 
-$font-mixins: body, logo, navigation, author, role, title; 
+$font-mixins: body, logo, navigation, author, role, title;
