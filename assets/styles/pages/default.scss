@@ -21,10 +21,6 @@ html {
       &#tutorial-info {
         @include tutorial-info;
       }
-      
-      &#menu {
-        @include menu;
-      }
     }
   }
 }
