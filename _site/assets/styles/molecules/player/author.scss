@@ -1,6 +1,10 @@
 @mixin author {
   @include flexbox($display: inline-flex, $wrap: nowrap, $align-items: center);
   
+  @include mobile {
+    display: none;
+  }
+  
   figure {
     @include figure;
     margin-right: $lem / 2;
