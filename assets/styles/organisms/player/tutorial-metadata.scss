@@ -11,6 +11,11 @@
   padding: $lem;
   margin: auto $lem;
   
+  @include laptop-and-up {
+    padding: $lem $lem * 2;
+    margin: auto $lem * 2;
+  }
+  
   @include desktop-and-up {
     padding: $lem $lem * 4;
     margin: auto $lem * 4;
