@@ -1,5 +1,8 @@
 @mixin header {
   @include flexbox($wrap: nowrap, $justify-content: space-between);
+  max-width: 56em;
+  margin: 0 auto;
+  
   padding: $lem / 2 $lem;
   
   .logo {
