@@ -1,5 +1,5 @@
 @mixin author {
-  @include flexbox($display: inline-flex, $wrap: nowrap, $align-items: center);
+  @include flexbox($display: inline-flex, $wrap: nowrap, $align-items: flex-start);
   
   figure {
     @include figure;
@@ -9,6 +9,7 @@
   aside {
     li {
       &.by {
+        margin-top: $lem / 2;
         font-size: small;
       }
       
