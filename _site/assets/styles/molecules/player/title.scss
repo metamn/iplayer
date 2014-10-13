@@ -1,7 +1,4 @@
 @mixin title {
   @include text(title);
-
-  nav {
-    @include slider-bullets;
-  }
+  margin: 0 $lem/2 $lem/2 0;
 }
