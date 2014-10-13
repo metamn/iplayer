@@ -1,5 +1,13 @@
 @mixin layout {
   header, #title-and-author, #steps, #signup {
-    @include flexbox($wrap: nowrap, $justify-content: space-between, $align-items: center);
+    @include flexbox($wrap: nowrap, $justify-content: space-between);
+    
+    @include below-laptop {
+      @include flexbox-wrap(wrap);
+    }
+  }
+  
+  #signup {
+    @include flexbox-align-items(center);
   }
 }
