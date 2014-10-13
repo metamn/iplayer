@@ -1,0 +1,5 @@
+@mixin layout {
+  header, #title-and-author, #steps, #signup {
+    @include flexbox($wrap: nowrap, $justify-content: space-between, $align-items: center);
+  }
+}

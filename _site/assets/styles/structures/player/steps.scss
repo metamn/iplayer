@@ -1,0 +1,12 @@
+@mixin steps {
+  @include colors(white-on-blue);
+  padding: 0 $lem;
+  
+  nav {
+  
+  }
+  
+  figure {
+    @include featured-image;
+  }
+}

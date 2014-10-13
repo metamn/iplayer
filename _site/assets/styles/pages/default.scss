@@ -18,9 +18,18 @@ html {
         @include intro;
       }
       
+      &#steps {
+        @include steps;
+      }
+      
       &#signup {
         @include signup;
       }
     }
+    
+    @include layout;
   }
 }
+
+
+

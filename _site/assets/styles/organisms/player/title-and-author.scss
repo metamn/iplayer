@@ -1,8 +1,4 @@
 @mixin title-and-author {
-  @include flex-basis(56em);
-  @include flexbox($wrap: nowrap, $justify-content: space-between, $align-items: flex-start);
-  
-  
   #title {
     @include title;
   }

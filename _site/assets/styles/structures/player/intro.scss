@@ -1,14 +1,8 @@
 @mixin intro {
-  @include flexbox($wrap: wrap, $justify-content: center);
-  
   @include colors(white-on-blue);
   padding: $lem;
-  
+      
   #title-and-author {
     @include title-and-author;
-  }
-  
-  figure {
-    @include featured-image;
   }
 } 
