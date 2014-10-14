@@ -9,6 +9,7 @@
   }
   
   figure {
+    @include flex-shrink(2);
     @include featured-image;
   }
 }
