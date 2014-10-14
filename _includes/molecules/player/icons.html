@@ -1,11 +1,9 @@
 <aside id="icons">
   <h3>Icons</h3>
   
-  <ul>
-    {% assign icons = include.ids | split: ',' %}
-    
-    {% for i in icons %}
-      <li>{% include atoms/icon.html id=i %}</li>
-    {% endfor %}
-  </ul>
+  {% assign icons = include.ids | split: ',' %}
+  
+  {% for i in icons %}
+    {% include atoms/icon.html id=i %}
+  {% endfor %}
 </aside>

@@ -1,7 +1,8 @@
 @mixin icons {
+  @include flexbox($wrap: wrap, $justify-content: center);
   @include font(navigation);
   
-  ul {
-    @include list(inline);
+  div {
+    padding: $lem/2 $lem * 2 0 0;
   }
 }
