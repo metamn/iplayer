@@ -1,7 +1,7 @@
 @mixin signup {
-  padding: $lem / 2 $lem;
+  @include flexbox($wrap: nowrap, $justify-content: space-between, $align-items: center);
   
   .button {
-    @include button;
+    @include button(white-on-blue);
   }
 }

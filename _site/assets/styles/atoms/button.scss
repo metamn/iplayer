@@ -1,11 +1,17 @@
-@mixin button($padding: $lem/2 $lem, $border: $black) {
+@mixin button($color-scheme, $padding: $lem/2 $lem, $border-color: null) {
   padding: $padding;
-  border: 2px solid $border;
+  
+  border: 2px solid;
   @include border-radius($lem);
+  
+  @if ($border-color != null) {
+    border-color: $border-color;
+  }
   
   display: inline-block;
   cursor: pointer;
   
+  @include colors($color-scheme);
   @include link(none);
   @include font(navigation);
 }
