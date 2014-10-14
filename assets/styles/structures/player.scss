@@ -1,8 +1,12 @@
-@mixin intro {
+@mixin player {
   @include colors(white-on-blue);
   padding: $lem;
-      
+  
   #title-and-author {
     @include title-and-author;
   }
-} 
+  
+  #sidebar {
+    @include sidebar;
+  }
+}

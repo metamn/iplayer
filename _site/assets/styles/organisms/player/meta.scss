@@ -1,0 +1,9 @@
+@mixin meta {
+  #viewed {
+    @include viewed;
+  }
+  
+  #signup {
+    @include signup;
+  }
+}

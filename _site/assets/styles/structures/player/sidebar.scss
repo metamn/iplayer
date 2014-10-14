@@ -1,0 +1,14 @@
+@mixin sidebar {
+  #meta {
+    @include meta;
+  }
+  
+  #steps {
+    @include steps;
+    display: none;
+  }
+  
+  figure {
+    @include featured-image;
+  }
+}

@@ -6,8 +6,4 @@
     margin-right: $lem;
     max-width: $text-width;
   }
-  
-  figure {
-    @include featured-image;
-  }
 }

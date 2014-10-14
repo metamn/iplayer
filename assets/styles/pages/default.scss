@@ -14,12 +14,8 @@ html {
     }
     
     section {
-      &#intro {
-        @include intro;
-      }
-      
-      &#steps {
-        @include steps;
+      &#player {
+        @include player;
       }
       
       &#signup {
