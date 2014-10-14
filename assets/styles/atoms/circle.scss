@@ -1,6 +1,11 @@
-@mixin circle($color-scheme, $size) {
+@mixin circle($color-scheme, $size, $border-color: null) {
   @include colors($color-scheme);
-  @include border-radius($size);
+  @include border-radius($size * 2);
+  
+  @if ($border-color != null) {
+    border-color: $border-color;
+    border: 2px solid;
+  }
   
   padding: $size / 2;
   width: $size;

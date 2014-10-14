@@ -1,5 +1,6 @@
 @mixin sidebar {
   #meta {
+    @include flex-basis($text-width);
     @include meta;
   }
   
@@ -9,7 +10,6 @@
   }
   
   figure {
-    @include flex-shrink(2);
     @include featured-image;
   }
 }
