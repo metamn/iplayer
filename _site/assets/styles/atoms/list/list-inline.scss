@@ -1,0 +1,10 @@
+@mixin list-inline($margin-right: $lem/2) {
+  li {
+    display: inline-block;
+    margin-right: $margin-right;
+    
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}

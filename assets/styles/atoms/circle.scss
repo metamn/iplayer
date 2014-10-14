@@ -1,0 +1,10 @@
+@mixin circle($color-scheme, $size) {
+  @include colors($color-scheme);
+  @include border-radius($size);
+  
+  padding: $size / 2;
+  width: $size;
+  height: $size;
+  
+  text-align: center;
+} 

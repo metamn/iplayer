@@ -1,6 +1,4 @@
 @mixin featured-image {
   @include figure($figcaption: true);
   @include figcaption-play;
-  
-  max-width: 56em;
 }

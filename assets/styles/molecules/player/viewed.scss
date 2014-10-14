@@ -1,4 +1,26 @@
 @mixin viewed {
-  background: lightblue;
-  padding: $lem/2;
+  @include flexbox($wrap: nowrap, $justify-content: space-between);
+  
+  p {
+    font-size: smaller;
+    text-align: center;
+    
+    span {
+      display: block;
+    }
+    
+    &.steps, &.views {
+      span {
+        @include circle(blue-on-lightblue, $lem);
+      }
+    }
+      
+    &.edited {
+      span {
+        @include colors(blue-on-lightblue);
+        padding: $lem/4 $lem/2;
+        margin: $lem/4 0;
+      }
+    }
+  }
 }
