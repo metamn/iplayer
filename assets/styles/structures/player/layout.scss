@@ -6,4 +6,24 @@
       @include flexbox-wrap(wrap);
     }
   }
+  
+  #title-and-author {
+    @include below-laptop {
+      #author {
+        margin: $lem / 2 0;
+      }
+    }
+  }
+  
+  #sidebar {
+    @include below-laptop {
+      #meta, #steps {
+        @include flex-order(2);
+      }
+
+      figure {
+        @include flex-order(1);
+      }
+    }
+  }
 }
