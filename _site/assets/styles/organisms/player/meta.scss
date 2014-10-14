@@ -5,5 +5,21 @@
   
   #signup {
     @include signup;
+    display: none;
+  }
+  
+  #icons {
+    @include icons;
+    display: none;
+  }
+  
+  #languages {
+    @include languages;
+    display: none;
+  }
+  
+  #keyboard {
+    @include keyboard;
+    display: none;
   }
 }

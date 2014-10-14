@@ -1,7 +1,6 @@
 @mixin sidebar {
   #meta {
     @include meta;
-    visibility: hidden;
   }
   
   #steps {
