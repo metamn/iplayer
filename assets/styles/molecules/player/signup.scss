@@ -1,7 +1,12 @@
 @mixin signup {
-  @include flexbox($wrap: nowrap, $justify-content: space-between, $align-items: center);
+  text-align: center;
+  
+  p {
+    @include text(signup);
+  }
   
   .button {
+    margin-top: $lem/2;
     @include button(white-on-blue);
   }
 }

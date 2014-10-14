@@ -1,6 +1,5 @@
 @mixin sidebar {
   #meta {
-    @include flex-basis($text-width);
     @include meta;
   }
   

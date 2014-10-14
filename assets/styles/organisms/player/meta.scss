@@ -1,4 +1,5 @@
 @mixin meta {
+  @include flexbox($direction: column, $justify-content: space-between);
   
   #viewed {
     @include viewed;
@@ -12,11 +13,7 @@
     @include icons;
   }
   
-  #languages {
-    @include languages;
-  }
-  
-  #keyboard {
-    @include keyboard;
+  #languages-and-keyboard {
+    @include languages-and-keyboard;
   }
 }

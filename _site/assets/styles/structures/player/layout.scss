@@ -19,10 +19,25 @@
     @include below-laptop {
       #meta, #steps {
         @include flex-order(2);
+        width: 99%;
       }
 
       figure {
         @include flex-order(1);
+      }
+    }
+    
+    @include laptop-and-up {
+      #meta, #steps {
+        @include flex-basis($text-width * 2);
+        margin-right: $lem;
+      }
+    }
+    
+    @include desktop-and-up {
+      #meta, #steps {
+        @include flex-basis($text-width * 1.5);
+        margin-right: $lem;
       }
     }
   }

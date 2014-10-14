@@ -6,4 +6,8 @@
   @if ($type == title) {
     @include text-title;
   }
+  
+  @if ($type == signup) {
+    @include text-signup;
+  }
 }
