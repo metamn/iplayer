@@ -2,7 +2,7 @@
   @include flexbox($wrap: wrap, $justify-content: center);
   @include font(navigation);
   
-  p {
+  div {
     margin-right: $lem;
     margin-top: $lem / 4;
     
