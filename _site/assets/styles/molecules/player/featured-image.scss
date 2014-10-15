@@ -1,4 +1,15 @@
 @mixin featured-image {
   @include figure($figcaption: true);
   @include figcaption-play;
+  
+  img {
+    opacity: .7;
+    
+    will-change: opacity;
+    @include transition(opacity, 1s ease-out);
+    
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
