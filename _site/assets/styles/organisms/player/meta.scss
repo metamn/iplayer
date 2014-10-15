@@ -1,6 +1,10 @@
 @mixin meta {
   @include flexbox($direction: column, $justify-content: space-between);
   
+  @include laptop-and-up {
+    margin-top: $lem;
+  }
+  
   #viewed {
     @include viewed;
   }

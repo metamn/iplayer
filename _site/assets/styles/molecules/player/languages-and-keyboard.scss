@@ -1,6 +1,10 @@
 @mixin languages-and-keyboard {
   @include flexbox($wrap: wrap, $justify-content: center);
-  @include font(navigation);
+  
+  @include font(author);
+  @include desktop-and-up {
+    @include font(navigation);
+  }
   
   div {
     margin-right: $lem;
