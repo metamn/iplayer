@@ -1,4 +1,8 @@
 @mixin sidebar {
+  @include laptop-and-up {
+    margin-top: $lem;
+  }
+  
   #meta {
     @include meta;
   }

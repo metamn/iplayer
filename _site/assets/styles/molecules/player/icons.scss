@@ -1,8 +1,17 @@
 @mixin icons {
-  @include flexbox($wrap: wrap, $justify-content: center);
+  @include flexbox($wrap: wrap);
+  @include below-laptop {
+    @include flexbox($justify-content: center);
+  }
+  
   @include font(navigation);
   
   div {
-    padding: $lem/2 $lem * 2 0 0;
-  }
+    margin-right: $lem;
+    margin-top: $lem / 4;
+    
+    [class^="icon-"], [class*=" icon-"] {
+      color: $lightblue;
+    }
+  } 
 }

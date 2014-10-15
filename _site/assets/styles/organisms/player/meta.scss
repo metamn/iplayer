@@ -1,6 +1,5 @@
 @mixin meta {
   @include flexbox($direction: column, $justify-content: space-between);
-  overflow: hidden;
   
   #viewed {
     @include viewed;
@@ -8,6 +7,7 @@
   
   #signup {
     @include signup;
+    margin: $lem*3 0;
   }
   
   #icons {

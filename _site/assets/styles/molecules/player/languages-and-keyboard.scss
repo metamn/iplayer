@@ -3,6 +3,11 @@
   @include font(navigation);
   
   p {
-    padding: $lem;
+    margin-right: $lem;
+    margin-top: $lem / 4;
+    
+    [class^="icon-"], [class*=" icon-"] {
+      color: $lightblue;
+    }
   }
 }
