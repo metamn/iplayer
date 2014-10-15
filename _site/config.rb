@@ -6,6 +6,9 @@ require 'sass-globbing'
 http_path = "http://metamn.github.io/iplayer/"
 http_images_dir = "assets/images"
 
+relative_assets = true
+
+
 css_dir = "assets/styles"
 sass_dir = "assets/styles"
 images_dir = "assets/images"
@@ -16,8 +19,6 @@ fonts_dir = "assets"
 # output_style = :expanded or :nested or :compact or :compressed
 output_style = :compact
 
-# To enable relative paths to assets via compass helper functions. Uncomment:
-# relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
 line_comments = false

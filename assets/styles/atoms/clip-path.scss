@@ -1,0 +1,8 @@
+// from http://cssplant.com/clip-path-generator
+
+@mixin clip-path($clip) {
+  -webkit-clip-path: image-url("clip.svg");
+  -ms-clip-path: image-url("clip.svg");
+  clip-path: image-url("clip.svg#svgClip");
+  -webkit-mask: image-url("clip.svg");
+}

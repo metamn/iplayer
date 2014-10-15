@@ -2,7 +2,10 @@
   @include flexbox($wrap: nowrap, $justify-content: space-between);
   
   @include colors(blue-on-lightblue);
-  padding: $lem;
+  @include clip-path("clip.svg");
+  
+  padding: $lem/2 $lem;
+  
   
   p {
     font-size: smaller;

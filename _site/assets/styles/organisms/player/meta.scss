@@ -1,5 +1,6 @@
 @mixin meta {
   @include flexbox($direction: column, $justify-content: space-between);
+  overflow: hidden;
   
   #viewed {
     @include viewed;
