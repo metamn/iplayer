@@ -2,7 +2,14 @@
   counter-reset: counter;
   font-size: smaller;
   
+  border-left: 4px solid $green;
+  margin-left: $lem;
+  position: relative;
+  
   div {
+    position: relative;
+    left: -$lem;
+    
     counter-increment: counter;
     margin-bottom: $lem/2;
     
