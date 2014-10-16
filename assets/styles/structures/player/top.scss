@@ -5,10 +5,9 @@
   
   #author {
     @include author;
-    //display: none;
   }
   
-  .icons {
-    display: none;
+  #navigation-1 {
+    @include navigation-1;
   }
 }

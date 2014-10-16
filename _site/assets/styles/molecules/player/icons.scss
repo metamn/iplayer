@@ -1,16 +1,10 @@
 @mixin icons {
   @include flexbox($wrap: wrap);
-  
   @include below-laptop {
     @include flexbox($justify-content: center);
   }
   
-  
-  @include font(author);
-  
-  @include desktop-and-up {
-    @include font(navigation);
-  }
+  @include text(navigation);
   
   div {
     @include icon($lightblue);

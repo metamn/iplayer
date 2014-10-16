@@ -6,7 +6,9 @@
 
     #top {
       #navigation-1 {
-        display: flex !important;
+        @include laptop-and-up {
+          display: flex !important;
+        }
       }
       
       #title {

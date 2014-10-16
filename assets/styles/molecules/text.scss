@@ -14,4 +14,8 @@
   @if ($type == signup) {
     @include text-signup;
   }
+  
+  @if ($type == navigation) {
+    @include text-navigation;
+  }
 }

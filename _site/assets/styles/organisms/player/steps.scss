@@ -2,4 +2,8 @@
   #arrows {
     @include arrows;
   }
+  
+  #step-title {
+    @include step-title;
+  }
 }

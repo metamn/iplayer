@@ -1,0 +1,11 @@
+@mixin step-title {
+  ol {
+    li {
+      display: none;
+      
+      &.active, &:first-of-type {
+        display: block;
+      }
+    }
+  }
+} 

@@ -1,0 +1,7 @@
+@mixin text-navigation {
+  @include font(author);
+  
+  @include desktop-and-up {
+    @include font(navigation);
+  }
+}
