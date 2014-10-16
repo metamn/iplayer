@@ -1,13 +1,37 @@
 @mixin player-start {
-  #top #author, #body #meta, #start-tutorial figcaption {
-    display: none !important;
-  }
-  
-  #top #navigation-1, #body #steps {
-    display: block !important;
-  }
-  
-  #top #title {
-    @include text(title-small);
+  body {
+    #top #author, #body #meta, #start-tutorial figcaption {
+      display: none !important;
+    }
+
+    #top {
+      #navigation-1 {
+        display: flex !important;
+      }
+      
+      #title {
+        @include text(title-small);
+      }    
+    }
+
+    #body {
+      #steps {
+        display: block !important;
+      }
+      
+      #navigation-4 {
+        display: flex;
+
+        @include laptop-and-up {
+          display: none;
+        }
+      } 
+      
+      #navigation-5 {
+        @include laptop-and-up {
+          display: flex;
+        }
+      } 
+    }
   }
 }

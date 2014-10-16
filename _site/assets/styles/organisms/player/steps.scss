@@ -1,9 +1,5 @@
 @mixin steps {
-  @include colors(white-on-blue);
-  padding: 0 $lem;
-  
-  nav {
-    margin-right: $lem;
-    max-width: $text-width;
+  @include below-laptop {
+    
   }
 }

@@ -15,9 +15,16 @@
     }
   }
   
+  
   #body {
+    #navigation-4, #navigation-5 {
+      @include flex-order(3);
+      display: none;
+    }
+    
+    
     @include below-laptop {
-      #meta, #steps {
+      #meta {
         @include flex-order(2);
         width: 99%;
       }
