@@ -1,9 +1,10 @@
 <nav id="step-title">
   <h3>Step title</h3>
 
-  <ol>
-    {% for step in page.steps %}
-      <li>{{ step }}</li>
-    {% endfor %}
-  </ol>
+  {% for step in page.steps limit:7 %}
+    <div id="step-{{ forloop.index }}">
+      <span class="step">{{ forloop.index }}</span>
+      <span classs="text">{{ step }}</span>
+    </div>
+  {% endfor %}
 </nav>
