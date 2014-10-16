@@ -1,5 +1,5 @@
 @mixin layout {
-  header, #title-and-author, #sidebar {
+  header, #top, #sidebar {
     @include flexbox($wrap: nowrap, $justify-content: space-between);
     
     @include below-laptop {
@@ -7,7 +7,7 @@
     }
   }
   
-  #title-and-author {
+  #top {
     @include below-laptop {
       #author {
         margin: $lem / 2 0;

@@ -2,8 +2,8 @@
   @include colors(white-on-blue);
   padding: $lem;
   
-  #title-and-author {
-    @include title-and-author;
+  #top {
+    @include top;
   }
   
   #sidebar {
