@@ -5,5 +5,10 @@
   
   #author {
     @include author;
+    //display: none;
+  }
+  
+  .icons {
+    display: none;
   }
 }

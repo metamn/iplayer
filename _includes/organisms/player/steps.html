@@ -1,15 +1,7 @@
 <section id="steps">
   <h3>Steps</h3>
   
-  <nav>
-    <h3>Navigation</h3>
-    
-    <ol>
-      {% for step in page.steps %}
-        <li>{{ step }}</li>
-      {% endfor %}
-    </ol>
-  </nav>
-  
-  
+  {% include molecules/player/step/title.html %}
+  {% include molecules/player/step/arrows.html %}
+  {% include molecules/player/icons.html ids="10,6" title="Navigation 4" %}
 </section>

@@ -1,6 +1,7 @@
 @mixin body {
   #meta {
     @include meta;
+    //display: none;
   }
   
   #steps {
