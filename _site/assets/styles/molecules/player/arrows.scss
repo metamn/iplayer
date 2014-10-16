@@ -1,8 +1,9 @@
 @mixin arrows {
   @include flexbox($wrap: nowrap);
+  
   @include text(navigation);
   @include colors(white-on-blue2);
-  margin-top: $lem/2;
+  margin: $lem/2 0;
   padding: $lem/2;
   
   #arrow-left {

@@ -1,0 +1,22 @@
+@mixin ol {
+  ounter-reset: counter;
+  
+  li {
+    counter-increment: counter;
+    margin-bottom: $lem/2;
+    
+    position: relative;
+    margin-left: $lem * 3;
+    height: $lem * 2;
+    
+    
+    &:before {
+      content: counter(counter);
+      
+      @include circle(white-on-green, $lem);
+      display: inline-block;
+      position: absolute;
+      left: -$lem * 3;
+    }
+  }
+}
