@@ -1,8 +1,11 @@
-@mixin icon($text-style) {
-  @include icon-text($text-style);
-  
-  margin-left: $lem /2;
-  cursor: pointer;
+@mixin icon($color) {
+  margin-right: $lem;
+  margin-top: $lem / 4;
+
+  [class^="icon-"], [class*=" icon-"] {
+    color: $color;
+    font-family: 'icomoon';
+  }
   
   span {
     &.text.none {
@@ -12,34 +15,3 @@
 }
 
 
-/*
-- Styling an Icomoon icon
-- The style is the same as in the 'text' mixin
-*/
-
-@mixin icon-text($text) {
-  [class^="icon-"], [class*=" icon-"] {
-    @include text($text);
-    font-family: 'icomoon';
-  }
-}
-
-
-/* Display the icon text on hover
-*/
-
-@mixin icon-hover {
-  span {
-    @include animation(prepare);
-    
-    &.none {
-      display: none;
-    }
-    
-    &:first-of-type:hover {
-      + span.none {
-        display: block;
-      }
-    }
-  }
-}
