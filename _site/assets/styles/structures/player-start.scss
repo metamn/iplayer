@@ -6,4 +6,8 @@
   #top #navigation-1, #body #steps {
     display: block !important;
   }
+  
+  #top #title {
+    @include text(title-small);
+  }
 }

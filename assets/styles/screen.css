@@ -76,3 +76,4 @@ html body header, html body #top, html body #body { display: -webkit-box; /* OLD
 @media only screen and (min-width: 90em) { html body #body #meta, html body #body #steps { -webkit-flex-basis: 28.125em; -moz-flex-basis: 28.125em; -ms-flex-preferred-size: 28.125em; flex-basis: 28.125em; margin-right: 1.25em; } }
 html.start #top #author, html.start #body #meta, html.start #start-tutorial figcaption { display: none !important; }
 html.start #top #navigation-1, html.start #body #steps { display: block !important; }
+html.start #top #title { font-family: "Titillium Web", sans-serif; font-weight: 600; font-size: 1.6154em; line-height: 1.1; max-width: 12.5em; font-size: 1.3077em !important; max-width: none !important; }

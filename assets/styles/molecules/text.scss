@@ -7,6 +7,10 @@
     @include text-title;
   }
   
+  @if ($type == title-small) {
+    @include text-title(small);
+  }
+  
   @if ($type == signup) {
     @include text-signup;
   }

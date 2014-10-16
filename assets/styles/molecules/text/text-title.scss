@@ -1,4 +1,9 @@
-@mixin text-title {
+@mixin text-title($type: null) {
   @include font(title);
   max-width: $text-width / 1.5;
+  
+  @if ($type == small) {
+    font-size: $heading-level-1 !important;
+    max-width: none !important;
+  }
 }
