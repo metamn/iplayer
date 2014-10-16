@@ -1,13 +1,9 @@
 $(document).ready(function() {
   
-  // Skills
-  $('.frontpage article.clickable').click(function() {
-    $(this).find('aside').slideToggle('slow');
+  // Play
+  $('#start-tutorial .icon').click(function() {
+    $('html').addClass('start');
   });
   
-  // CMS
-  $('.frontpage #cms article h3').click(function() {
-    $(this).next('aside').slideToggle('slow');
-  });
 });
 

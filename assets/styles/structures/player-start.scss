@@ -1,0 +1,9 @@
+@mixin player-start {
+  #top #author, #body #meta, #start-tutorial figcaption {
+    display: none !important;
+  }
+  
+  #top #navigation-1, #body #steps {
+    display: block !important;
+  }
+}
