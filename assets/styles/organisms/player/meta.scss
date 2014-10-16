@@ -13,11 +13,7 @@
     @include signup;
   }
   
-  #icons {
+  .icons {
     @include icons;
-  }
-  
-  #languages-and-keyboard {
-    @include languages-and-keyboard;
   }
 }

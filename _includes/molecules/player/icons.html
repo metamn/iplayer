@@ -1,5 +1,5 @@
-<aside id="icons">
-  <h3>Icons</h3>
+<aside id="{% include atoms/classname.html title=include.title %}" class="icons">
+  <h3>{{ include.title }}</h3>
   
   {% assign icons = include.ids | split: ',' %}
   
