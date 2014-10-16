@@ -1,5 +1,5 @@
 @mixin layout {
-  header, #top, #sidebar {
+  header, #top, #body {
     @include flexbox($wrap: nowrap, $justify-content: space-between);
     
     @include below-laptop {
@@ -15,7 +15,7 @@
     }
   }
   
-  #sidebar {
+  #body {
     @include below-laptop {
       #meta, #steps {
         @include flex-order(2);
