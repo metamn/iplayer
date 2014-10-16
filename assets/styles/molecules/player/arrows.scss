@@ -1,0 +1,21 @@
+@mixin arrows {
+  @include flexbox($wrap: nowrap);
+  
+  #arrow-left {
+    div {
+      @include transform(rotate(180deg));
+      position: relative;
+      
+      top: -$lem / 3;
+      @include mobile {
+        top: -$lem / 8;
+      }
+      @include laptop-and-up {
+        top: -.355em;
+      }
+      @include desktop-and-up {
+        top: -.2em;
+      }
+    }
+  }
+}
