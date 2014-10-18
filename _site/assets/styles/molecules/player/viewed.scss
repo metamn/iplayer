@@ -1,8 +1,4 @@
 @mixin viewed {
-  font-size: smaller;
-  font-style: italic;
-  margin-left: calc(64px + #{$lem/2});
-  
   
   div {
     @include icon($red);

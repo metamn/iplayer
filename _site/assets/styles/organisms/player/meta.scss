@@ -1,11 +1,11 @@
 @mixin meta {
   @include flexbox($direction: column, $justify-content: space-between);
   
-  #viewed {
-    @include viewed;
+  #author-and-viewed {
+    @include author-and-viewed;
   }
   
-  #author {
-    @include author;
+  .icons {
+    @include icons;
   }
 }

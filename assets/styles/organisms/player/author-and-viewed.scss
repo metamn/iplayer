@@ -1,0 +1,16 @@
+@mixin author-and-viewed {
+  @include flexbox($wrap: nowrap, $justify-content: center);
+  margin: $lem 0;
+  
+  @include clip-path($blue2);
+  padding: $lem;
+  
+  
+  #viewed {
+    @include viewed;
+  }
+  
+  #author {
+    @include author;
+  }
+}
