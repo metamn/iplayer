@@ -1,48 +1,19 @@
 @mixin signup {
-  margin-left: $lem * 2;
-  
   .made {
     @include text(signup);
-    color: darken($white, 10%);
-    
-    &:before {
-      content: ' ';
-      display: block;
-      width: $text-width / 4;
-      border-top: 1px solid;
-      padding-top: $lem;
-      margin-top: $lem;
-      color: $red;
-    }
+    color: $lightblue;
+    margin-right: $lem;
   }
-  
-  .icon {
-    @include icon($red);
-    @include text(navigation);
-  }
-  
   
   .button {
-    margin-top: $lem / 2;
     @include button(white-on-blue);
     
     font-size: small;
     font-weight: bold;
     font-style: italic;
-    color: darken($white, 10%); 
   }
   
-  
-  @include below-laptop {
-    margin: $lem * 2 0;
-    text-align: center;
-    
-    .made {
-      margin-top: $lem;
-      
-      &:before {
-        display: none;
-      }
-    }
+  .made, .button {
+    display: inline-block;
   }
 }
