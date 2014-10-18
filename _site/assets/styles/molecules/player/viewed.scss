@@ -1,6 +1,5 @@
 @mixin viewed {
   @include flexbox($wrap: nowrap, $justify-content: flex-start);
-  display: none;
   
   p {
     font-size: smaller;

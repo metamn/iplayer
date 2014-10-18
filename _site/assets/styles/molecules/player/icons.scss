@@ -1,12 +1,12 @@
 @mixin icons {
-  @include flexbox($wrap: wrap);
   @include below-laptop {
-    @include flexbox($justify-content: center);
+    @include flexbox($wrap: wrap, $justify-content: center);
   }
   
   @include text(navigation);
   
   div {
     @include icon($lightblue);
+    padding-bottom: $lem/4;
   } 
 }
