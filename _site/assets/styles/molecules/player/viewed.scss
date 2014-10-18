@@ -1,13 +1,19 @@
 @mixin viewed {
-  
-  div {
-    @include icon($red);
-  }
+  @include flexbox($display: inline-flex, $wrap: nowrap, $align-items: flex-start);
   
   p {
+    font-size: smaller;
+    margin-right: $lem * 2;
+    
+    @include mobile {
+      margin-bottom: $lem;
+      margin-right: $lem;
+    }
+    
     span {
-      color: $lightblue;
-      margin-right: $lem/2;
+      color: $red;
+      font-size: $heading-level-2;
+      display: block;
     }
   }
 }
