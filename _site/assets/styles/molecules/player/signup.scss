@@ -11,6 +11,7 @@
     margin-top: $lem/2;
     @include button(lightblue-on-blue);
     
+    font-weight: bold;
     font-size: small;
   }
 }
