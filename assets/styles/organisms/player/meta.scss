@@ -9,4 +9,7 @@
     @include viewed;
   }
   
+  #signup {
+    @include signup;
+  }
 }

@@ -1,9 +1,15 @@
 @mixin viewed {
   @include flexbox($wrap: nowrap, $justify-content: flex-start);
+  margin-top: $lem;
   
   p {
     font-size: smaller;
     text-align: center;
     margin-right: $lem;
+    
+    span {
+      color: $red;
+      font-weight: bold;
+    }
   }
 }
