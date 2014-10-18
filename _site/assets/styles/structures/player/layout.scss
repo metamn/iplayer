@@ -7,16 +7,9 @@
     }
   }
   
-  #top {
-    @include below-laptop {
-      #author {
-        margin: $lem / 2 0;
-      }
-    }
-  }
-  
-  
   #body {
+    margin-top: $lem;
+    
     #navigation-4, #navigation-5 {
       @include flex-order(3);
       display: none;
@@ -29,7 +22,7 @@
         width: 99%;
       }
 
-      figure {
+      #start-tutorial {
         @include flex-order(1);
       }
     }

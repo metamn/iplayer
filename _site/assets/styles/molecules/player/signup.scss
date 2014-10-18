@@ -16,4 +16,8 @@
   .made, .button {
     display: inline-block;
   }
+  
+  @include below-laptop {
+    display: none;
+  }
 }
