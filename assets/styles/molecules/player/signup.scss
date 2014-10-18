@@ -1,17 +1,16 @@
 @mixin signup {
-  text-align: center;
-  
   margin-bottom: $lem;
-  padding: $lem * 2 0;
-  @include colors(white-on-blue2);
-  @include clip-path(null);
-  
-  p {
+
+  .made {
     @include text(signup);
+    @include colors(lightblue-on-blue);
+    font-size: 1.16em;
   }
   
   .button {
     margin-top: $lem/2;
-    @include button(white-on-blue2);
+    @include button(lightblue-on-blue);
+    
+    font-size: small;
   }
 }
