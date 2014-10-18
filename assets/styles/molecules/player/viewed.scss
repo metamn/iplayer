@@ -1,10 +1,11 @@
 @mixin viewed {
-  @include flexbox($wrap: nowrap, $justify-content: flex-start);
-  margin-top: $lem;
-  
   font-size: smaller;
   
   p {
     margin-left: $lem / 2;
+  }
+  
+  div, p {
+    display: inline-block;
   }
 }

@@ -1,17 +1,19 @@
 @mixin signup {
-  margin-bottom: $lem;
-
   .made {
     @include text(signup);
     @include colors(lightblue-on-blue);
     font-size: 1.16em;
+    margin-bottom: $lem/4;
   }
   
   .button {
-    margin-top: $lem/2;
     @include button(lightblue-on-blue);
-    
     font-weight: bold;
     font-size: small;
+  }
+  
+  @include below-laptop {
+    margin: $lem * 2 0;
+    text-align: center;
   }
 }
