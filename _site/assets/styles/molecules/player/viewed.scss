@@ -1,11 +1,15 @@
 @mixin viewed {
   font-size: smaller;
+  font-style: italic;
   
-  p {
-    margin-left: $lem / 2;
+  div {
+    @include icon($red);
   }
   
-  div, p {
-    display: inline-block;
+  p {
+    span {
+      color: $lightblue;
+      margin-right: $lem/2;
+    }
   }
 }

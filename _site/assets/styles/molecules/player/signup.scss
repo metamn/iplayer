@@ -1,19 +1,43 @@
 @mixin signup {
   .made {
     @include text(signup);
-    @include colors(lightblue-on-blue);
-    font-size: 1.16em;
-    margin-bottom: $lem/4;
+    color: darken($white, 10%);
+    
+    &:before {
+      content: ' ';
+      display: block;
+      width: $text-width / 4;
+      border-top: 1px solid;
+      padding-top: $lem/2;
+      margin-top: $lem/2;
+      color: $red;
+    }
   }
   
   .button {
-    @include button(lightblue-on-blue);
+    @include button(white-on-blue);
+    color: darken($white, 10%);
     font-weight: bold;
     font-size: small;
+    font-style: italic;
+    margin-top: $lem/2;
   }
   
   @include below-laptop {
     margin: $lem * 2 0;
     text-align: center;
+    
+    .made {
+      margin-top: $lem;
+      
+      &:before {
+        display: none;
+      }
+    }
+    
+    .button {
+      
+      display: inline-block;
+    }
   }
 }
