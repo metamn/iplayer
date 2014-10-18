@@ -14,14 +14,23 @@
     }
   }
   
-  .button {
-    @include button(white-on-blue);
-    color: darken($white, 10%);
-    font-weight: bold;
-    font-size: small;
-    font-style: italic;
-    margin-top: $lem/2;
+  .icon {
+    @include icon($red);
+    @include text(navigation);
   }
+  
+  
+  .button {
+    margin-left: $lem;
+    margin-top: $lem;
+    @include button(white-on-blue);
+    
+    font-size: small;
+    font-weight: bold;
+    font-style: italic;
+    color: darken($white, 10%); 
+  }
+  
   
   @include below-laptop {
     margin: $lem * 2 0;
@@ -36,8 +45,7 @@
     }
     
     .button {
-      
-      display: inline-block;
+      margin-left: 0;
     }
   }
 }

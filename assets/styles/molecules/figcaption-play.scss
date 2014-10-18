@@ -2,9 +2,10 @@
   position: relative;
   
   figcaption {
-    @include center(both, $top: 45%);
+    @include center(both, $top: 47.5%);
     position: absolute;
     z-index: 1;
+    min-width: 11em; // Don't break word in mobile
     
     @include button(white-on-green, $border-color: $green);
   }
