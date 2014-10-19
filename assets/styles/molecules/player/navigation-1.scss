@@ -1,8 +1,0 @@
-@mixin navigation-1($play: false) {
-  @include icons;
-
-  display: none;
-  @if ($play != false) {
-    display: block;
-  }
-} 

@@ -3,6 +3,27 @@
   
   article {
     @include step;
+    
+    &:last-of-type {
+      h3 {
+        @include laptop-and-up {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  
+  #navigation-5 {
+    @include icons($play);
+    
+    clear: both;
+    @include flexbox($wrap: wrap);
+    
+    @include colors(white-on-blue);
+    padding: $lem 0;
+    
+    position: relative;
+    left: -$lem;
   }
   
   display: none;
@@ -20,5 +41,14 @@
   article {
     position: relative;
     left: -$lem;
+    
+    // Hide the line
+    &:last-of-type {
+      figure {
+        margin-bottom: 0;
+        position: relative;
+        top: $lem/2;
+      }
+    }
   }
 }
