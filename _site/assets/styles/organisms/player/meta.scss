@@ -1,4 +1,4 @@
-@mixin meta {
+@mixin meta($play: false) {
   @include flexbox($direction: column, $justify-content: space-between);
   
   #author-and-viewed {
@@ -7,5 +7,9 @@
   
   .icons {
     @include icons;
+  }
+  
+  @if ($play != false) {
+    display: none;
   }
 }

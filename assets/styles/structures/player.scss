@@ -1,12 +1,12 @@
-@mixin player {
+@mixin player($play: false) {
   @include colors(white-on-blue);
   padding: $lem;
   
   #top {
-    @include top;
+    @include top($play);
   }
   
   #body {
-    @include body;
+    @include body($play);
   }
 }

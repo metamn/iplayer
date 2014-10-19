@@ -1,4 +1,4 @@
-@mixin icons {
+@mixin icons($display: true) {
   @include below-laptop {
     @include flexbox($wrap: wrap, $justify-content: center);
   }
@@ -9,4 +9,12 @@
     @include icon($lightblue);
     padding-bottom: $lem/4;
   } 
+  
+  
+  
+  @if ($display == true) or ($display == play) {
+    display: block;
+  } @else {
+    display: none;
+  }
 }

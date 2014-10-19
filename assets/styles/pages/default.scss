@@ -25,10 +25,6 @@ html {
     
     @include layout;
   }
-  
-  &.start {
-    @include player-start;
-  }
 }
 
 

@@ -1,11 +1,10 @@
-@mixin body {
+@mixin body($play: false) {
   #meta {
-    @include meta;
+    @include meta($play);
   }
   
   #steps {
-    @include steps;
-    display: none;
+    @include steps($play);
   }
   
   figure {

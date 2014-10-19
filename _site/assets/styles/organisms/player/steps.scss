@@ -1,9 +1,14 @@
-@mixin steps {
-  #arrows {
-    @include arrows;
-  }
-  
+@mixin steps($play: false) {
   #step-title {
     @include step-title;
+  }
+  
+  #navigation-5 {
+    @include icon($play);
+  }
+  
+  display: none;
+  @if ($play != false) {
+    display: block;
   }
 }

@@ -1,13 +1,17 @@
-@mixin top {
+@mixin top($play: false) {
   #title {
     @include title;
   }
   
   #signup {
-    @include signup;
+    @include signup($play);
   }
   
   #navigation-1 {
-    @include navigation-1;
+    @include icons($play);
+    
+    @include below-laptop {
+      display: none;
+    }
   }
 }
