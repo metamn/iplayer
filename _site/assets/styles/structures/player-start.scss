@@ -1,6 +1,6 @@
 @mixin player-start {
   body {
-    #top #author, #body #meta, #start-tutorial figcaption {
+    #top #signup, #body #meta, #start-tutorial figcaption {
       display: none !important;
     }
 
@@ -9,10 +9,6 @@
         @include laptop-and-up {
           display: flex !important;
         }
-      }
-      
-      #title {
-        @include text(title-small);
       }    
     }
 
