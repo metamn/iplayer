@@ -1,15 +1,24 @@
 @mixin featured-image($play) {
-  @include figure($figcaption: $play);
-  @include figcaption-play;
   
-  img {
-    opacity: .8;
-    
-    will-change: opacity;
-    @include transition(opacity, 1s ease-out);
-    
-    &:hover {
-      opacity: 1;
+  @if ($play != play) {
+    @include figure($figcaption: true);
+    @include figcaption-play;
+
+    img {
+      opacity: .8;
+
+      will-change: opacity;
+      @include transition(opacity, 1s ease-out);
+
+      &:hover {
+        opacity: 1;
+      }
     }
+  } @else {
+      @include figure($figcaption: false);
+
+      @include below-laptop {
+        display: none;
+      }
   }
 }

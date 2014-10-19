@@ -76,7 +76,6 @@ html body section#player #body #steps article figure figcaption { display: none 
 @media only screen and (min-width: 64em) { html body section#player #body #steps article figure { display: none; } }
 html body section#player #body .featured-image { position: relative; }
 html body section#player #body .featured-image img { max-width: 100%; height: auto; }
-html body section#player #body .featured-image figcaption { display: none; }
 html body section#player #body .featured-image figcaption { position: relative; top: 47.5%; -moz-transform: translateX(-47.5%); -ms-transform: translateX(-47.5%); -webkit-transform: translateX(-47.5%); transform: translateX(-47.5%); position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); position: absolute; z-index: 1; min-width: 11em; padding: 0.625em 1.25em; border: 2px solid; -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; border-color: #00b874; display: inline-block; cursor: pointer; color: #f9f9f9; background-color: #00b874; font-family: "Source Sans Pro", sans-serif; font-weight: 400; font-size: smaller; text-transform: uppercase; letter-spacing: 0.10417em; }
 html body section#player #body .featured-image img { opacity: .8; will-change: opacity; -moz-transition: opacity, ease-out 1s; -o-transition: opacity, ease-out 1s; -webkit-transition: opacity, ease-out 1s; transition: opacity, ease-out 1s; }
 html body section#player #body .featured-image img:hover { opacity: 1; }
@@ -137,8 +136,6 @@ html.play body section#player #body #steps article h3 .text { max-width: calc(10
 html.play body section#player #body #steps article figure { margin-bottom: 1.25em; }
 html.play body section#player #body #steps article figure figcaption { display: none !important; }
 @media only screen and (min-width: 64em) { html.play body section#player #body #steps article figure { display: none; } }
-html.play body section#player #body .featured-image { position: relative; }
 html.play body section#player #body .featured-image img { max-width: 100%; height: auto; }
-html.play body section#player #body .featured-image figcaption { position: relative; top: 47.5%; -moz-transform: translateX(-47.5%); -ms-transform: translateX(-47.5%); -webkit-transform: translateX(-47.5%); transform: translateX(-47.5%); position: relative; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); position: absolute; z-index: 1; min-width: 11em; padding: 0.625em 1.25em; border: 2px solid; -moz-border-radius: 1.25em; -webkit-border-radius: 1.25em; border-radius: 1.25em; border-color: #00b874; display: inline-block; cursor: pointer; color: #f9f9f9; background-color: #00b874; font-family: "Source Sans Pro", sans-serif; font-weight: 400; font-size: smaller; text-transform: uppercase; letter-spacing: 0.10417em; }
-html.play body section#player #body .featured-image img { opacity: .8; will-change: opacity; -moz-transition: opacity, ease-out 1s; -o-transition: opacity, ease-out 1s; -webkit-transition: opacity, ease-out 1s; transition: opacity, ease-out 1s; }
-html.play body section#player #body .featured-image img:hover { opacity: 1; }
+html.play body section#player #body .featured-image figcaption { display: none; }
+@media only screen and (max-width: 63.999em) { html.play body section#player #body .featured-image { display: none; } }
