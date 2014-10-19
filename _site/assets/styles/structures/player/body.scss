@@ -7,7 +7,7 @@
     @include steps($play);
   }
   
-  figure {
+  .featured-image {
     @include featured-image($play);
   }
 }

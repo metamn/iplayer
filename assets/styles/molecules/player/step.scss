@@ -2,10 +2,16 @@
   @include show-title;
   @include title-with-numbers;
   
-  @include laptop-and-up {
-    figure {
+  figure {
+    margin-bottom: $lem;
+    
+    figcaption {
+      display: none !important;
+    }
+    
+    @include laptop-and-up {
       display: none;
-    } 
+    }
   }
 } 
 
@@ -15,7 +21,6 @@
     width: 100%;
     float: left;
     margin-bottom: $lem;
-    
     
     .step, .text {
       display: inline-block;
@@ -32,6 +37,7 @@
     
     .text {
       max-width: calc(100% - #{$size * 2 + $size/2 + $lem/2});
+      padding-top: $lem/2.5;
     }
   }
 }
