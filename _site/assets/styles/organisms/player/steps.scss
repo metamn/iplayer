@@ -1,4 +1,6 @@
 @mixin steps($play: false) {
+  @include timeline; 
+  
   article {
     @include step;
   }
@@ -6,5 +8,17 @@
   display: none;
   @if ($play != false) {
     display: block;
+  }
+}
+
+
+@mixin timeline {
+  border-left: 4px solid $green;
+  margin-left: $lem;
+  position: relative;
+  
+  article {
+    position: relative;
+    left: -$lem;
   }
 }

@@ -3,8 +3,6 @@
   @include title-with-numbers;
   
   @include laptop-and-up {
-    @include timeline;
-    
     figure {
       display: none;
     } 
@@ -12,26 +10,28 @@
 } 
 
 
-@mixin timeline {
-  border-left: 4px solid $green;
-  margin-left: $lem;
-  position: relative;
-  
-  h3 {
-    position: relative;
-    left: -$lem;
-  }
-}
-
 @mixin title-with-numbers {
   h3 {
-    @include flexbox($wrap: nowrap, $align-items: center);
+    width: 100%;
+    float: left;
+    margin-bottom: $lem;
+    
+    
+    .step, .text {
+      display: inline-block;
+      float: left;
+    }
+    
+    $size: $lem - $lem/4;
     
     .step {
       @include circle(white-on-green, $lem - $lem/4);
-      display: inline-block;
       text-align: center;
       margin-right: $lem/2;
+    }
+    
+    .text {
+      max-width: calc(100% - #{$size * 2 + $size/2 + $lem/2});
     }
   }
 }

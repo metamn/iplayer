@@ -2,7 +2,10 @@
 {% assign step = page.steps[id] %}
 
 <article id="step-{{ include.id }}" class="step">
-  <h3><span class="step">{{ id }}</span>{{ step }}</h3>
+  <h3>
+    <span class="step">{{ id }}</span>
+    <span class="text">{{ step }}</span>
+  </h3>
   
   {% include atoms/figure.html id="1" %}
 </article>
