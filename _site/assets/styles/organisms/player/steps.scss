@@ -1,10 +1,6 @@
 @mixin steps($play: false) {
-  #step-title {
-    @include step-title;
-  }
-  
-  #navigation-5 {
-    @include icon($play);
+  article {
+    @include step;
   }
   
   display: none;

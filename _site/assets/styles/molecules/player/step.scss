@@ -1,26 +1,37 @@
-@mixin step-title {
-  counter-reset: counter;
-  font-size: smaller;
+@mixin step {
+  @include show-title;
+  @include title-with-numbers;
   
+  @include laptop-and-up {
+    @include timeline;
+    
+    figure {
+      display: none;
+    } 
+  }
+} 
+
+
+@mixin timeline {
   border-left: 4px solid $green;
   margin-left: $lem;
   position: relative;
   
-  div {
+  h3 {
     position: relative;
     left: -$lem;
-    
-    counter-increment: counter;
-    margin-bottom: $lem/2;
-    
+  }
+}
+
+@mixin title-with-numbers {
+  h3 {
     @include flexbox($wrap: nowrap, $align-items: center);
     
     .step {
-      content: counter(counter);
       @include circle(white-on-green, $lem - $lem/4);
-      display: inline;
+      display: inline-block;
       text-align: center;
       margin-right: $lem/2;
     }
   }
-} 
+}

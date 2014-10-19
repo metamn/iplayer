@@ -1,5 +1,5 @@
-@mixin featured-image {
-  @include figure($figcaption: true);
+@mixin featured-image($play) {
+  @include figure($figcaption: $play);
   @include figcaption-play;
   
   img {
