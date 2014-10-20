@@ -1,7 +1,11 @@
-@mixin text-navigation {
-  @include font(author);
+@mixin text-navigation($type: null) {
+  @include font(navigation);
   
-  @include desktop-and-up {
-    @include font(navigation);
+  @if ($type == large) {
+    font-size: large;
+    
+    @include mobile {
+      font-size: medium;
+    }
   }
 }

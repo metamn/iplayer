@@ -14,7 +14,7 @@
       }
       
       &.name {
-        @include font(author);
+        @include font(navigation);
       }
 
       &.role {

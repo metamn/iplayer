@@ -7,6 +7,6 @@
     z-index: 1;
     min-width: 11em; // Don't break word in mobile
     
-    @include button(white-on-green, $border-color: $green);
+    @include button(white-on-green, $border-color: $green, $size: large);
   }
 } 

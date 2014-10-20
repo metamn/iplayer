@@ -8,6 +8,8 @@
   div {
     @include icon($lightblue);
     padding-bottom: $lem/4;
+    
+    cursor: pointer;
   } 
   
   

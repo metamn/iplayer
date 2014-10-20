@@ -1,4 +1,4 @@
-@mixin text($type) {
+@mixin text($type, $size: null) {
   @if ($type == logo) {
     @include text-logo;
   }
@@ -7,15 +7,11 @@
     @include text-title;
   }
   
-  @if ($type == title-small) {
-    @include text-title(small);
-  }
-  
   @if ($type == signup) {
     @include text-signup;
   }
   
   @if ($type == navigation) {
-    @include text-navigation;
+    @include text-navigation($size);
   }
 }
