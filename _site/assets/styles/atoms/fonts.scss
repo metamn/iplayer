@@ -43,12 +43,16 @@
     line-height: 1.1;
      
   }
+  @if ($type == number) {
+    font-family: "Monospace", monospace;
+     
+  }
 }
 
 
 // Special font mixins
-$font-families: Source Sans Pro, Abel;
+$font-families: Source Sans Pro, Abel, Monospace;
 
 
 // 
-$font-mixins: body, logo, signup, navigation, role, title;
+$font-mixins: body, logo, signup, navigation, role, title, number; 

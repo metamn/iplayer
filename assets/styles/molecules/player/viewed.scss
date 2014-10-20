@@ -11,8 +11,9 @@
     }
     
     span {
+      @include font(number);
       color: $red;
-      font-size: $heading-level-2;
+      font-size: $heading-level-1;
       display: block;
     }
   }
