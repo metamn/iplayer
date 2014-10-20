@@ -11,6 +11,8 @@
         }
       }
     }
+    
+    @include display-less;
   }
   
   #navigation-5 {
@@ -31,6 +33,22 @@
     display: block;
   }
 }
+
+
+@mixin display-less {
+  @include laptop-and-up {
+    &:nth-of-type(7), &:nth-of-type(8), &:nth-of-type(9) {
+      display: none;
+    }
+  }
+  
+  @include desktop-and-up {
+    &:nth-of-type(7), &:nth-of-type(8), &:nth-of-type(9) {
+      display: block;
+    }
+  }
+}
+
 
 
 @mixin timeline {

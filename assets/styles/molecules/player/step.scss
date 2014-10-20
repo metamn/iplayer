@@ -2,6 +2,10 @@
   @include show-title;
   @include title-with-numbers;
   
+  @include laptop-and-up {
+    @include active-inactive-title;
+  }
+  
   figure {
     margin-bottom: $lem;
     
@@ -14,6 +18,24 @@
     }
   }
 } 
+
+
+
+@mixin active-inactive-title {
+  h3 {
+    cursor: pointer;
+  }
+  
+  h3 .text {
+    opacity: .1;
+  }
+  
+  &:first-of-type, &:hover {
+    h3 .text {
+      opacity: 1;
+    }
+  }
+}
 
 
 @mixin title-with-numbers {
