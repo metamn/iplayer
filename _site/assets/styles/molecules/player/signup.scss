@@ -1,4 +1,4 @@
-@mixin signup($play: false) {
+@mixin signup($play: false, $device: none) {
   .made {
     @include text(signup);
     color: $lightblue;
@@ -23,5 +23,17 @@
   
   @if ($play != false) {
     display: none;
+  }
+  
+  
+  @if ($device == mobile) {
+    display: block !important;
+    margin: $lem * 2 auto;
+    text-align: center;
+    
+    .made {
+      display: block;
+      margin-bottom: $lem/2;
+    }
   }
 }

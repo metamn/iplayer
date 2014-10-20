@@ -25,6 +25,10 @@
       #start-tutorial {
         @include flex-order(1);
       }
+      
+      #signup {
+        @include flex-order(3);
+      }
     }
     
     @include laptop-and-up {

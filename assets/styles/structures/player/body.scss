@@ -10,4 +10,12 @@
   .featured-image {
     @include featured-image($play);
   }
+  
+  #signup {
+    display: none;
+    
+    @include below-laptop {
+      @include signup($device: mobile);
+    }
+  }
 }
