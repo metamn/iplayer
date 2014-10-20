@@ -21,7 +21,7 @@
     width: 100%;
     float: left;
     margin-bottom: $lem;
-    
+    @include font(step);
     
     .step, .text {
       display: inline-block;

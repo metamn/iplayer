@@ -1,7 +1,7 @@
 <section id="steps">
   <h3>Steps</h3>
   
-  {% for step in page.steps %}
+  {% for step in page.steps limit:6 %}
     {% include molecules/player/step.html id=forloop.index %}
   {% endfor %}
   

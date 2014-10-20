@@ -43,6 +43,11 @@
     line-height: 1.1;
      
   }
+  @if ($type == step) {
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+     
+  }
   @if ($type == number) {
     font-family: "Monospace", monospace;
      
@@ -55,4 +60,4 @@ $font-families: Source Sans Pro, Abel, Monospace;
 
 
 // 
-$font-mixins: body, logo, signup, navigation, role, title, number; 
+$font-mixins: body, logo, signup, navigation, role, title, step, number;

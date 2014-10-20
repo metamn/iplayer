@@ -20,7 +20,7 @@
     @include flexbox($wrap: wrap);
     
     @include colors(white-on-blue);
-    padding: $lem 0;
+    padding: $lem * 2 0;
     
     position: relative;
     left: -$lem;
