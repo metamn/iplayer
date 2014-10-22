@@ -1,4 +1,52 @@
 @mixin share {
+  @include flexbox($direction: column, $justify-content: center, $align-items: center);
+  @include circle(black-on-white, $text-width / 2);
   @include show-title;
   
+  h3 {
+    @include text(signup);
+  }
+  
+  h4 {
+    @include text(title);
+    margin: $lem;
+  }
+  
+  dl {
+    dt {
+      @include font(role)
+    }
+    
+    dd {
+      @include flexbox($wrap: nowrap, $justify-content: center, $align-items: center);
+      margin-bottom: $lem;
+      
+      input {
+        padding: $lem/4;
+      }
+      
+      .button {
+        @include button(black-on-white);
+        font-size: small;
+        font-weight: bold;
+        font-style: italic;
+      }
+    }
+  }
+  
+  aside {
+    @include flexbox($wrap: nowrap, $justify-content: center, $align-items: center);
+    font-size: $heading-level-2;
+    margin-bottom: $lem;
+    
+    .icon {
+      margin-right: $lem /2;
+    }
+  }
+  
+  
+  display: none;
+  &.active {
+    display: block;
+  }
 }
