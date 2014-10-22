@@ -49,7 +49,7 @@
      
   }
   @if ($type == number) {
-    font-family: "Monospace", monospace;
+    font-family: "Monospace", 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
      
   }
 }
