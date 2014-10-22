@@ -1,9 +1,0 @@
-html.play {
-  body {
-    section {
-      &#player {
-        @include player(play);
-      }
-    }
-  }
-}

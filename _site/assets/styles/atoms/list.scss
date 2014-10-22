@@ -1,9 +1,0 @@
-@mixin list($type) {
-  @if ($type == inline) {
-    @include list-inline;
-  }
-  
-  @if ($type == underlined) {
-    @include list-underlined;
-  }
-}

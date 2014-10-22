@@ -1,76 +1,93 @@
----
-layout: styleguide
-title: Responsive Typography
-subtitle: Font sizes and line heights for different devices
-category: atoms
-scss: "responsive-typography.scss"
-items:
-  - name: Mobile
-    description: Font size for mobile
-    breakpoint: "mobile"
-    values:
-      - name: "font-size"
-        value: "100%"
-      - name: "line-height"
-        value: "1.25"
-  - name: Tablet and Laptop
-    description: Font size for tablets and laptops
-    values:
-      - name: "font-size"
-        value: "125%"
-      - name: "line-height"
-        value: "1.25"
-  - name: Desktop
-    description: Font size for desktops
-    breakpoint: "desktop-and-up"
-    values:
-      - name: "font-size"
-        value: "150%"
-      - name: "line-height"
-        value: "1.25"
-grid:
-  - name: Mobile
-    description: Line height and text width for mobile
-    values:
-      - name: "$lem"
-        value: "1.25em !global"
-      - name: "$text-width"
-        value: "$lem * 15 !global"
-  - name: Laptop
-    description: Line height and text width for laptop
-    breakpoint: "laptop-and-up"
-    values:
-      - name: "$lem"
-        value: "1.25em !global"
-      - name: "$text-width"
-        value: "$lem * 15 !global"
-  - name: Desktop
-    description: Line height and text width for desktop
-    breakpoint: "desktop-and-up"
-    values:
-      - name: "$lem"
-        value: "1.25em !global"
-      - name: "$text-width"
-        value: "$lem * 15 !global"
----
 
 
-{% capture description %}
+
+
+
+
+
+
+
+
+
+
+<section id="responsive-typography" class="styleguide-entry">
+  <h1>Responsive Typography</h1>
   
-{% endcapture %}
-
-
-{% capture example %}
+  <article class="subtitle">
+    <h3>Short description</h3>
+    
+    Font sizes and line heights for different devices
+  </article>
   
-{% endcapture %}
-
-
-
-{% capture technical %}
+  <article class="description">
+    <h3>Description</h3>
+    
+    
   
-{% endcapture %}
+
+  </article>
+  
+  
+  <article class="example">
+    <h3>Example</h3>
+    
+    
+  
+
+  </article>
+  
+  
+  <article class="technical">
+    <h3>Technical description</h3>
+    
+    
+  
+
+  </article>
+  
+  <article class="code">
+  <h3>Source code</h3>
+
+  <nav>
+    <h3>Code snippets</h3>
+
+    <ul>
+      <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$lem</span><span class="o">:</span> <span class="mi">1</span><span class="mf">.25</span><span class="kt">em</span> <span class="nv">!global</span><span class="p">;</span>
+<span class="nv">$text-width</span><span class="o">:</span> <span class="nv">$lem</span> <span class="o">*</span> <span class="mi">15</span> <span class="nv">!global</span><span class="p">;</span>
+
+<span class="k">@include</span><span class="nd"> laptop-and-up</span> <span class="p">{</span>
+  <span class="nv">$lem</span><span class="o">:</span> <span class="mi">1</span><span class="mf">.25</span><span class="kt">em</span> <span class="nv">!global</span><span class="p">;</span>
+  <span class="nv">$text-width</span><span class="o">:</span> <span class="nv">$lem</span> <span class="o">*</span> <span class="mi">15</span> <span class="nv">!global</span><span class="p">;</span>
+  
+<span class="p">}</span>
+
+<span class="k">@include</span><span class="nd"> desktop-and-up</span> <span class="p">{</span>
+  <span class="nv">$lem</span><span class="o">:</span> <span class="mi">1</span><span class="mf">.25</span><span class="kt">em</span> <span class="nv">!global</span><span class="p">;</span>
+  <span class="nv">$text-width</span><span class="o">:</span> <span class="nv">$lem</span> <span class="o">*</span> <span class="mi">15</span> <span class="nv">!global</span><span class="p">;</span>
+  
+<span class="p">}</span>
 
 
-
-
-{% include styleguide/structures/sg-styleguide-entry.html description=description example=example technical=technical %}
+<span class="k">@mixin</span><span class="nf"> responsive-typography</span> <span class="p">{</span> 
+  <span class="k">@include</span><span class="nd"> mobile</span> <span class="p">{</span>
+    <span class="na">font-size</span><span class="o">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+    <span class="na">line-height</span><span class="o">:</span> <span class="mi">1</span><span class="mf">.25</span><span class="p">;</span>
+    
+  <span class="p">}</span>
+   
+  <span class="na">font-size</span><span class="o">:</span> <span class="mi">125</span><span class="kt">%</span><span class="p">;</span>
+  <span class="na">line-height</span><span class="o">:</span> <span class="mi">1</span><span class="mf">.25</span><span class="p">;</span>
+  
+  <span class="k">@include</span><span class="nd"> desktop-and-up</span> <span class="p">{</span>
+    <span class="na">font-size</span><span class="o">:</span> <span class="mi">150</span><span class="kt">%</span><span class="p">;</span>
+    <span class="na">line-height</span><span class="o">:</span> <span class="mi">1</span><span class="mf">.25</span><span class="p">;</span>
+    
+  <span class="p">}</span>
+  
+<span class="p">}</span></code></pre></div></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </nav>
+</article>
+</section>

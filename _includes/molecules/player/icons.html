@@ -1,9 +1,0 @@
-<aside id="{% include atoms/classname.html title=include.title %}" class="icons">
-  <h3>{{ include.title }}</h3>
-  
-  {% assign icons = include.ids | split: ',' %}
-  
-  {% for i in icons %}
-    {% include atoms/icon.html id=i %}
-  {% endfor %}
-</aside>

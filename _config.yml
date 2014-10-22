@@ -1,8 +1,0 @@
-permalink: /:title
-
-title: iorad
-images: assets/images
-#url: http://metamn.github.io/iplayer
-
-
-exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', '_scripts/*']

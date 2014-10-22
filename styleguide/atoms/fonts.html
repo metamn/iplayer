@@ -1,104 +1,122 @@
----
-layout: styleguide
-title: Fonts
-subtitle: All the font settings for the site
-category: atoms
-scss: "fonts.scss"
-comments:
-  - A list of all font families
-  - Special font mixins
-  - A list of all font mixins
-fonts:
-  - name: Source Sans Pro
-    description: An universal typeface
-    from: Google
-    value: Source+Sans+Pro
-    styles: "300,300italic,400,400italic,700,700italic"
-    mixins:
-      - name: Body
-        font-family: sans-serif
-        properties:
-          - name: font-weight
-            value: 400
-      - name: Logo
-        font-family: sans-serif
-        properties:
-          - name: font-weight
-            value: 700
-      - name: Signup
-        font-family: sans-serif
-        properties:
-          - name: font-weight
-            value: 700
-          - name: line-height
-            value: 1.1
-          - name: font-style
-            value: italic
-      - name: Navigation
-        font-family: sans-serif
-        properties:
-          - name: font-weight
-            value: 400
-          - name: font-size
-            value: small
-          - name: text-transform
-            value: uppercase
-          - name: letter-spacing
-            value: $lem/12
-      - name: Role
-        font-family: sans-serif
-        properties:
-          - name: font-weight
-            value: 300
-          - name: font-size
-            value: small
-          - name: font-style
-            value: italic
-          - name: letter-spacing
-            value: $lem/12
-  - name: Abel
-    description: A narrow typeface for headlines
-    from: Google
-    value: Abel
-    styles: "400"
-    mixins:
-      - name: Title
-        font-family: sans-serif
-        properties:
-          - name: font-size
-            value: "$heading-level-1"
-          - name: line-height
-            value: 1.1
-      - name: Step
-        font-family: sans-serif
-        properties:
-          - name: font-weight
-            value: 400
-  - name: Monospace
-    description: The default monospace font
-    mixins:
-      - name: Number
-        font-family: "'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace"
-        
----
 
 
-{% capture description %}
+
+
+
+
+
+
+
+
+
+
+<section id="fonts" class="styleguide-entry">
+  <h1>Fonts</h1>
   
-{% endcapture %}
-
-
-{% capture example %}
+  <article class="subtitle">
+    <h3>Short description</h3>
+    
+    All the font settings for the site
+  </article>
   
-{% endcapture %}
-
-
-
-{% capture technical %}
+  <article class="description">
+    <h3>Description</h3>
+    
+    
   
-{% endcapture %}
+
+  </article>
+  
+  
+  <article class="example">
+    <h3>Example</h3>
+    
+    
+  
+
+  </article>
+  
+  
+  <article class="technical">
+    <h3>Technical description</h3>
+    
+    
+  
+
+  </article>
+  
+  <article class="code">
+  <h3>Source code</h3>
+
+  <nav>
+    <h3>Code snippets</h3>
+
+    <ul>
+      <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@import</span> <span class="sx">url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,700,700italic|Abel:400|)</span><span class="p">;</span>
 
 
+<span class="c1">// A list of all font mixins</span>
+<span class="k">@mixin</span><span class="nf"> font</span><span class="p">(</span><span class="nv">$type</span><span class="o">:</span> <span class="n">body</span><span class="p">)</span> <span class="p">{</span> 
+  <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">body</span><span class="p">)</span> <span class="p">{</span>
+    <span class="na">font-family</span><span class="o">:</span> <span class="s2">&quot;Source Sans Pro&quot;</span><span class="o">,</span> <span class="no">sans-serif</span><span class="p">;</span>
+    <span class="na">font-weight</span><span class="o">:</span> <span class="mi">400</span><span class="p">;</span>
+     
+  <span class="p">}</span>
+  <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">logo</span><span class="p">)</span> <span class="p">{</span>
+    <span class="na">font-family</span><span class="o">:</span> <span class="s2">&quot;Source Sans Pro&quot;</span><span class="o">,</span> <span class="no">sans-serif</span><span class="p">;</span>
+    <span class="na">font-weight</span><span class="o">:</span> <span class="mi">700</span><span class="p">;</span>
+     
+  <span class="p">}</span>
+  <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">signup</span><span class="p">)</span> <span class="p">{</span>
+    <span class="na">font-family</span><span class="o">:</span> <span class="s2">&quot;Source Sans Pro&quot;</span><span class="o">,</span> <span class="no">sans-serif</span><span class="p">;</span>
+    <span class="na">font-weight</span><span class="o">:</span> <span class="mi">700</span><span class="p">;</span>
+    <span class="na">line-height</span><span class="o">:</span> <span class="mi">1</span><span class="mf">.1</span><span class="p">;</span>
+    <span class="na">font-style</span><span class="o">:</span> <span class="no">italic</span><span class="p">;</span>
+     
+  <span class="p">}</span>
+  <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">navigation</span><span class="p">)</span> <span class="p">{</span>
+    <span class="na">font-family</span><span class="o">:</span> <span class="s2">&quot;Source Sans Pro&quot;</span><span class="o">,</span> <span class="no">sans-serif</span><span class="p">;</span>
+    <span class="na">font-weight</span><span class="o">:</span> <span class="mi">400</span><span class="p">;</span>
+    <span class="na">font-size</span><span class="o">:</span> <span class="n">small</span><span class="p">;</span>
+    <span class="na">text-transform</span><span class="o">:</span> <span class="no">uppercase</span><span class="p">;</span>
+    <span class="na">letter-spacing</span><span class="o">:</span> <span class="nv">$lem</span><span class="o">/</span><span class="mi">12</span><span class="p">;</span>
+     
+  <span class="p">}</span>
+  <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">role</span><span class="p">)</span> <span class="p">{</span>
+    <span class="na">font-family</span><span class="o">:</span> <span class="s2">&quot;Source Sans Pro&quot;</span><span class="o">,</span> <span class="no">sans-serif</span><span class="p">;</span>
+    <span class="na">font-weight</span><span class="o">:</span> <span class="mi">300</span><span class="p">;</span>
+    <span class="na">font-size</span><span class="o">:</span> <span class="n">small</span><span class="p">;</span>
+    <span class="na">font-style</span><span class="o">:</span> <span class="no">italic</span><span class="p">;</span>
+    <span class="na">letter-spacing</span><span class="o">:</span> <span class="nv">$lem</span><span class="o">/</span><span class="mi">12</span><span class="p">;</span>
+     
+  <span class="p">}</span>
+  <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">title</span><span class="p">)</span> <span class="p">{</span>
+    <span class="na">font-family</span><span class="o">:</span> <span class="s2">&quot;Abel&quot;</span><span class="o">,</span> <span class="no">sans-serif</span><span class="p">;</span>
+    <span class="na">font-size</span><span class="o">:</span> <span class="nv">$heading-level-1</span><span class="p">;</span>
+    <span class="na">line-height</span><span class="o">:</span> <span class="mi">1</span><span class="mf">.1</span><span class="p">;</span>
+     
+  <span class="p">}</span>
+  <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">step</span><span class="p">)</span> <span class="p">{</span>
+    <span class="na">font-family</span><span class="o">:</span> <span class="s2">&quot;Abel&quot;</span><span class="o">,</span> <span class="no">sans-serif</span><span class="p">;</span>
+    <span class="na">font-weight</span><span class="o">:</span> <span class="mi">400</span><span class="p">;</span>
+     
+  <span class="p">}</span>
+  <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">number</span><span class="p">)</span> <span class="p">{</span>
+    <span class="na">font-family</span><span class="o">:</span> <span class="s2">&quot;Monospace&quot;</span><span class="o">,</span> <span class="s1">&#39;</span><span class="s2">Courier New&#39;</span><span class="o">,</span> <span class="n">Courier</span><span class="o">,</span> <span class="s1">&#39;</span><span class="s2">Lucida Sans Typewriter&#39;</span><span class="o">,</span> <span class="s1">&#39;</span><span class="s2">Lucida Typewriter&#39;</span><span class="o">,</span> <span class="no">monospace</span><span class="p">;</span>
+     
+  <span class="p">}</span>
+<span class="p">}</span>
 
 
-{% include styleguide/structures/sg-styleguide-entry.html description=description example=example technical=technical %}
+<span class="c1">// Special font mixins</span>
+<span class="nv">$font-families</span><span class="o">:</span> <span class="n">Source</span> <span class="n">Sans</span> <span class="n">Pro</span><span class="o">,</span> <span class="n">Abel</span><span class="o">,</span> <span class="no">Monospace</span><span class="p">;</span>
+
+
+<span class="c1">// </span>
+<span class="nv">$font-mixins</span><span class="o">:</span> <span class="n">body</span><span class="o">,</span> <span class="n">logo</span><span class="o">,</span> <span class="n">signup</span><span class="o">,</span> <span class="n">navigation</span><span class="o">,</span> <span class="n">role</span><span class="o">,</span> <span class="n">title</span><span class="o">,</span> <span class="n">step</span><span class="o">,</span> <span class="n">number</span><span class="p">;</span></code></pre></div></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </nav>
+</article>
+</section>

@@ -1,7 +1,0 @@
-@mixin navigation-header {
-  @include flex-item($align-self: flex-end);
-  
-  .icon {
-    @include icon($black);
-  }
-}
