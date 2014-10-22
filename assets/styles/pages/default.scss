@@ -17,17 +17,25 @@ html {
       @include figure;
     }
     
-    section {
-      &#player {
-        @include player;
-      }
-      
-      &#signup {
-        @include signup;
-      }
+    #player {
+      @include player;
+    }
+  
+    #share {
+      @include share;
+      position: absolute;
+      z-index: 2;
     }
     
     @include layout;
+    
+    position: relative;
+    z-index: 0;
+    
+    header, #player {
+      position: relative;
+      z-index: 1;
+    }
   }
 }
 

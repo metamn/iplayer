@@ -1,7 +1,9 @@
 @mixin share {
   @include flexbox($direction: column, $justify-content: center, $align-items: center);
-  @include circle(black-on-white, $text-width / 2);
+  @include circle(white-on-black, $text-width / 2);
   @include show-title;
+  
+  @include share-layout;
   
   h3 {
     @include text(signup);
@@ -35,14 +37,16 @@
   }
   
   aside {
+    @include icons($margin: $lem/2);
     @include flexbox($wrap: nowrap, $justify-content: center, $align-items: center);
     font-size: $heading-level-2;
     margin-bottom: $lem;
-    
-    .icon {
-      margin-right: $lem /2;
-    }
   }
+}
+
+
+@mixin share-layout {
+  @include center(both, $top: 15%);
   
   
   display: none;

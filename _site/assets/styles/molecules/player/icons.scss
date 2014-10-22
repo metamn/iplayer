@@ -1,4 +1,4 @@
-@mixin icons($display: true) {
+@mixin icons($display: true, $margin: $lem) {
   @include below-laptop {
     @include flexbox($wrap: wrap, $justify-content: center);
   }
@@ -6,7 +6,7 @@
   @include text(navigation);
   
   div {
-    @include icon($green);
+    @include icon($green, $margin);
     padding-bottom: $lem/4;
     cursor: pointer;
   } 

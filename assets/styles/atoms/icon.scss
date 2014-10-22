@@ -1,5 +1,5 @@
-@mixin icon($color) {
-  margin-right: $lem;
+@mixin icon($color, $margin: $lem) {
+  margin-right: $margin;
   margin-top: $lem / 4;
 
   [class^="icon-"], [class*=" icon-"] {
