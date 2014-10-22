@@ -1,9 +1,8 @@
 @mixin share {
   @include flexbox($direction: column, $justify-content: center, $align-items: center);
-  @include circle(white-on-black, $text-width / 2);
+  @include circle(white-on-blue, $text-width / 2);
   @include show-title;
-  
-  @include share-layout;
+  @include center(both, $top: 15%);
   
   h3 {
     @include text(signup);
@@ -11,7 +10,7 @@
   
   h4 {
     @include text(title);
-    margin: $lem;
+    margin: $lem / 2 $lem;
   }
   
   dl {
@@ -25,10 +24,12 @@
       
       input {
         padding: $lem/4;
+        margin-right: $lem / 2;
       }
       
       .button {
-        @include button(black-on-white);
+        @include button(white-on-blue);
+        color: $green;  
         font-size: small;
         font-weight: bold;
         font-style: italic;
@@ -40,17 +41,19 @@
     @include icons($margin: $lem/2);
     @include flexbox($wrap: nowrap, $justify-content: center, $align-items: center);
     font-size: $heading-level-2;
-    margin-bottom: $lem;
+    margin-left: $lem;
   }
-}
-
-
-@mixin share-layout {
-  @include center(both, $top: 15%);
   
+  position: relative;
   
-  display: none;
-  &.active {
-    display: block;
+  #close {
+    @include circle(white-on-blue, $lem);
+    @include icon($white);
+    
+    position: absolute;
+    top: 2%;
+    right: 10%;
+    
+    cursor: pointer;
   }
 }

@@ -1,8 +1,9 @@
 $(document).ready(function() {
   
   // Share 
-  $('#navigation-2 .icon:last-of-type').click(function() {
+  $("#navigation-2 .icon:last-of-type, #share #close").click(function() {
     $("#share").toggleClass('active');
+    $("header, #player").toggleClass('inactive');
   });
   
   
