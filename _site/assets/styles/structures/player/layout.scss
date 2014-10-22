@@ -8,7 +8,7 @@
   }
   
   #body {
-    margin-top: $lem;
+    margin-top: $lem / 2;
     
     #navigation-4, #navigation-5 {
       @include flex-order(3);
@@ -24,10 +24,6 @@
 
       #start-tutorial {
         @include flex-order(1);
-      }
-      
-      #signup {
-        @include flex-order(3);
       }
     }
     

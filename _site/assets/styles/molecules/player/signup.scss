@@ -1,4 +1,7 @@
-@mixin signup($play: false, $device: none) {
+@mixin signup($display: true) {
+  @include flexbox($wrap: wrap, $justify-content: center, $align-items: center);
+  margin: auto $lem;
+  
   .made {
     @include text(signup);
     color: $lightblue;
@@ -6,34 +9,20 @@
   }
   
   .button {
-    @include button(white-on-blue);
+    @include button(lightblue-on-blue);
     
     font-size: small;
     font-weight: bold;
     font-style: italic;
-  }
-  
-  .made, .button {
-    display: inline-block;
-  }
-  
-  @include below-laptop {
-    display: none;
-  }
-  
-  @if ($play != false) {
-    display: none;
-  }
-  
-  
-  @if ($device == mobile) {
-    display: block !important;
-    margin: $lem * 2 auto;
-    text-align: center;
     
-    .made {
-      display: block;
-      margin-bottom: $lem/2;
+    @include below-laptop {
+      margin-top: $lem / 4;
     }
   }
+  
+  
+  @if ($display != true) {
+    display: none;
+  }
+  
 }

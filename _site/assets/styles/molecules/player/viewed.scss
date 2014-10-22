@@ -5,11 +5,6 @@
     font-size: smaller;
     margin-right: $lem * 2;
     
-    @include mobile {
-      margin-bottom: $lem;
-      margin-right: $lem;
-    }
-    
     span {
       @include font(number);
       color: $red;
