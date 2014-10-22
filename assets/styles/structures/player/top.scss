@@ -3,10 +3,6 @@
     @include title;
   }
   
-  #signup {
-    @include signup($play);
-  }
-  
   #navigation-1 {
     @include icons($play);
     
