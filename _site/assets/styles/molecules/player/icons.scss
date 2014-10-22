@@ -6,9 +6,8 @@
   @include text(navigation);
   
   div {
-    @include icon($lightblue);
+    @include icon($green);
     padding-bottom: $lem/4;
-    
     cursor: pointer;
   } 
   

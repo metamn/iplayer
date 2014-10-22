@@ -4,12 +4,11 @@
   
   .made {
     @include text(signup);
-    color: $lightblue;
-    margin-right: $lem / 2;
+    margin-right: $lem;
   }
   
   .button {
-    @include button(lightblue-on-blue);
+    @include button(white-on-blue);
     
     font-size: small;
     font-weight: bold;
@@ -18,6 +17,10 @@
     @include below-laptop {
       margin-top: $lem / 4;
     }
+  }
+  
+  .made, .button {
+    color: #eee;
   }
   
   
