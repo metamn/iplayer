@@ -5,7 +5,7 @@
   .made {
     @include text(signup);
     @include colors(lightblue-on-blue2);
-    margin-right: $lem / 2;
+    margin-right: $lem;
   }
   
   .button {

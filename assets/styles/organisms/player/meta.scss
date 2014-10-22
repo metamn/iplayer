@@ -9,6 +9,10 @@
     @include icons;
   }
   
+  #share {
+    @include share;
+  }
+  
   @if ($play != false) {
     display: none;
   }
